@@ -19,3 +19,21 @@ A06-S01,A06,lignin CDs,0,Kraft lignin,Ingevity,,hydrothermal,180,5.5,35,1.05,30,
 A07-S01,A07,LCdots,0,Kraft lignin,Ingevity,,hydrothermal,180,5.5,,,,2.5 wt% aqueous lignin,,,,,,,,,,,,0.22,2000,48,,,,F12,p3 §2.2,绝对质量、水体积、初始pH、碳点QY,2.5wt%未按溶液密度换算mg/mL。-45C48h仅用于小份冻干测浓度。
 A08-S01,A08,LCQDs,0,enzymatic hydrolysis lignin,,,hydrothermal,220,12,20,1,50,1g/20mL water,citric acid,0.8,,,,0.8,,,30,,,0.22,,,-60,72,,F14,p2 §2.2,初始pH、反应釜容量、透析（未报告）,预冻-20C12h；冻干压力原文20MPa疑错，未标准化。
 A05-S01,A05,CD,0,elephant grass leaf lignin (Pennisetum purpureum),,,hydrothermal,180,0.16666666666666666,30,0.1,3.3333333333333335,100mg lignin/30mLwater +2mL H2O2 solution,hydrogen peroxide30%,,2,,30% H2O2 stock; concentration basis not specified,,,,45,,,0.22,3500,24,,,4,F15,p3 Preparation of Carbon Dots,初始pH、反应釜容量、H2O2百分浓度基准,水热时间明确10min=0.166667h；3.333mg/mL只按30mL水，不含H2O2溶液体积。
+D01-S01,D01,turmeric CDs,0,turmeric ethanolic extract,,,solvothermal,180,12,,,,,,,,,,,,,,,,0.22,,,,,,F24,p3 §2.2,姜黄萃取投料、乙醇浓度、离心/干燥条件、透析未报告,20mL为乙醇提取液，不写入water_mL；与D03制备10h不同，不能视为同一合成样品。
+D02-S01,D02,PC-CQDs,0,citric acid,,,staged melt pyrolysis,180,1,,3,,,L-glutathione + PEPA,,10,,,,,25,,,,,,,,,4,F25,p2 §2.1,透析MWCO/时长、冻干条件、PEPA分子量,3gCA+1gGSH先140C30min；180C阶段PC加10mL PEPA，NC不加；非水热。
+D02-S02,D02,NC-CQDs,0,citric acid,,,staged melt pyrolysis,180,1,,3,,,L-glutathione,,,,,,,25,,,,,,,,,4,F25,p2 §2.1,透析MWCO/时长、冻干条件、PEPA分子量,3gCA+1gGSH先140C30min；180C阶段PC加10mL PEPA，NC不加；非水热。
+D03-S01,D03,ST-JHCQDs-180,0,turmeric ethanolic extract,,,solvothermal,180,10,,,,,,,,,,,,25,,,,0.22,,,,,,F26,p3 §§2.2-2.3,碳点绝对前驱体质量、产率、透析未报告,共享提取2g姜黄/30mL乙醇；取20mL上清反应，不能记每釜投料2g；240C未报告相同抗菌系列。
+D03-S02,D03,ST-JHCQDs-200,0,turmeric ethanolic extract,,,solvothermal,200,10,,,,,,,,,,,,25,,,,0.22,,,,,,F26,p3 §§2.2-2.3,碳点绝对前驱体质量、产率、透析未报告,共享提取2g姜黄/30mL乙醇；取20mL上清反应，不能记每釜投料2g；240C未报告相同抗菌系列。
+D03-S03,D03,ST-JHCQDs-220,0,turmeric ethanolic extract,,,solvothermal,220,10,,,,,,,,,,,,25,,,,0.22,,,,,,F26,p3 §§2.2-2.3,碳点绝对前驱体质量、产率、透析未报告,共享提取2g姜黄/30mL乙醇；取20mL上清反应，不能记每釜投料2g；240C未报告相同抗菌系列。
+D03-S04,D03,ST-JHCQDs-240,0,turmeric ethanolic extract,,,solvothermal,240,10,,,,,,,,,,,,25,,,,0.22,,,,,,F26,p3 §§2.2-2.3,碳点绝对前驱体质量、产率、透析未报告,共享提取2g姜黄/30mL乙醇；取20mL上清反应，不能记每釜投料2g；240C未报告相同抗菌系列。
+D04-S01,D04,MC-CDs,0,methylene blue,,,hydrothermal,180,8,25,0.37,,,cetyltrimethylammonium chloride,0.32,,,,,,50,,,,0.22,,120,-60,,,F28,SI p3 §1.3,MWCO原文500-1000Da范围，不取中点,透析500-1000Da5days；原文vacuum dried at-60C；非推测初始pH。
+D05-S01,D05,BCDs,0,purple rice lixivium,,,hydrothermal,140,4,,,,,,,,,,,,,,,,,1000,,,,4,F31,p14 ExperimentalSection,7mL浸提液实际碳质量、反应容器/釜容量,50g紫米/200mL水250W超声3min为共享浸提；取7mL；每3h换水4次。
+D06-S01,D06,BAPTCDs,0,D-glutamic acid,,,solvothermal in aqueous HCl,200,3,,0.025,,,o-phenylenediamine,0.05,,,,2,,,,3000,10,,500,,,24,,F36,p2 Synthesis of Carbon Dots,透析overnight未量化、初始pH/釜容量,25mL1M HCl水溶液不是纯水25mL；保留D型前驱体。
+D07-S01,D07,DG-CDs,0,citric acid,,,hydrothermal,150,6,20,0.4,,,dextran Mw20000 + PHMG,,,,,,,50,,,,0.22,,48,,,,F37,p9 §2.3,MWCO500-1000Da范围、冻干条件、产率,0.4gCA+0.4gDEX+50mgPHMG；不是DEX后包覆。
+D08-S01,D08,Co-Lvx-CDs,0,levofloxacin,,,hydrothermal,180,8,15,0.361,,,vitamin B12,0.271,,,,,,25,,8000,10,0.22,1000,24,,,,F38,p3 synthesis,初始pH、冻干条件,含抗生素来源前驱体；Co来源B12，Co掺杂与抗生素残存不能混为纯碳贡献。
+D08-S02,D08,Lvx-CDs,0,levofloxacin,,,hydrothermal,180,8,15,0.361,,,,,,,,,,25,,8000,10,0.22,1000,24,,,,F38,p3 synthesis,初始pH、冻干条件,含抗生素来源前驱体；Co来源B12，Co掺杂与抗生素残存不能混为纯碳贡献。
+D09-S01,D09,L-CDs,0,L-lysine,,,microwave pyrolysis,,0.06666666666666667,5,1,,,,,,,,,,,30,,,0.22,1000,24,,,,F39,p7 §2.2,微波温度、产率、冻干条件,750W4min；冷却后另加50mL水不合并为初始55mL。
+D10-S01,D10,citric-acid C-DOTS,0,citric acid,,,open microwave,,0.13333333333333333,100,100,,,,,,,,,,,,,,,1300,48,,,,F40,p3 Synthesis,微波实际瓦数/温度、热风干燥条件,原文100g/100mL按原值保留；high potency未量化瓦数。
+D11-S01,D11,RKG-CDs,0,red Korean ginseng aqueous root extract,,,cyclic microwave,,0.23333333333333334,,,,,,,,,,,,,,,,,3500,,,,,F42,p2 §2.2,提取质量/体积、微波温度、透析时长、冻干条件,700W2450MHz；7个2min加热周期，中间冷却2min；14min为总通电时间，不含冷却。
+D12-S01,D12,dual-emission SOD-like CDs,0,glutathione,,,microwave,,0.05,,0.5,,,formamide solvent,,,,,,,,3,,,,3500,24,,,,F30,p14 Preparation of CDs,微波温度、产率、冻干条件,0.5gGSH/20mLformamide；100W3min；SOD抗氧化作物研究，不是抗菌阴性样本。
+D13-S01,D13,C@C3-30V-24H,0,graphite rods99.99%,,,electrochemical exfoliation,,24,,,,,,,,,,,,,,8000,40,0.22,300,48,,,,F35,p2 §2.2,电极消耗质量、反应温度,3mMHCl500mL；电极间6cm；30V24h为明示最优样品；不把多因素水平擅自展开全部27配方。无抗菌试验。

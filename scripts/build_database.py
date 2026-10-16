@@ -1,5 +1,6 @@
 from pathlib import Path
 import json, csv, re, collections, zipfile
+from append_antibacterial import ADDITIONAL_STUDIES, extend_sources, append_records, REVIEW_READING
 
 ROOT=Path.cwd(); OUT=ROOT/'output'/'木质素碳点训练数据库'; OUT.mkdir(parents=True,exist_ok=True)
 CSV=OUT/'csv'; CSV.mkdir(exist_ok=True)
@@ -15,6 +16,7 @@ studies={
 'A07':('F12',2025,'Rossi','10.1016/j.mtcomm.2024.111418','Biobased composite fibrous membrane using PLA and lignin carbon dots fabricated via solution blow spinning for wound dressing application'),
 'A08':('F14',2025,'Zheng','10.1002/pen.70108','Development of Highly Transparent and Multifunctional Lignin-Derived Carbon Quantum Dots/PVA Composite Films for Active Food Packaging'),
 'A05':('F15',2024,'Yang','10.1021/acsanm.3c05880','Thin-Film Composite Polyamide Membranes Decorated with Photoactive Carbon Dots for Antimicrobial Applications')}
+studies.update(ADDITIONAL_STUDIES)
 
 def syn(study,label,precursor,temp,time,**kw):
     sid=f'{study}-S{sum(x["study_id"]==study for x in S)+1:02}'
@@ -266,6 +268,7 @@ for h,q in [(8,8.1),(16,11.6),(24,13)]:
 id_to_study={v[0]:k for k,v in studies.items()}; sources=[]
 reviewmeta={'F16':('C02',2025,'10.1002/EXP.70039','Applications of Lignin-Dervied Carbon Quantum Dots: Current Status and Challenges'),'F17':('C04',2024,'10.1016/j.ijbiomac.2024.132897','State-of-the-art of lignin-derived carbon nanodots: Preparation, properties, and applications'),'F18':('C01',2026,'10.1016/j.mtsust.2026.101406','A roadmap of lignin-derived carbon dots: A systematic review of synthesis parameters to obtain desired optical properties'),'F19':('C03',2025,'10.1002/aesr.202500187','Lignin as a Renewable Precursor for Carbon Quantum Dots: Synthesis, Doping Strategies, and Applications'),'F20':('C05',2022,'10.1213/j.issn.2096-2355.2022.03.006','Review of Carbon Dots from Lignin: Preparing, Tuning, and Applying')}
 for x in manifest:
+    if int(x['file_id'][1:]) >= 23: continue
     fid=x['file_id']; study=id_to_study.get(fid); kind='original_research' if study else 'supporting_information' if fid in ['F08','F09'] else 'review' if fid in reviewmeta else 'existing_bibliography' if fid=='F02' else 'project_context'
     dup='F10' if fid=='F11' else 'F12' if fid=='F13' else None
     if dup: kind='duplicate'; study=id_to_study[dup]
@@ -276,6 +279,8 @@ for x in manifest:
     doi=meta[3] if meta else reviewmeta[fid][2] if fid in reviewmeta else None
     status='全文参数与数值提取' if study and not dup else '重复文件不重复计数' if dup else '二次表格选取，原始文献核验前不并入训练' if fid in ['F18','F19','F20'] else '背景/路线与引文索引；未构造独立实验行' if fid in ['F16','F17'] else '项目背景或已有摘要库，未作为新测量'
     sources.append(dict(source_file_id=fid,study_id=study or (reviewmeta[fid][0] if fid in reviewmeta else None),file_name=x['file'],title=title,year=meta[1] if meta else reviewmeta[fid][1] if fid in reviewmeta else None,doi=doi,source_kind=kind,pages=x.get('pages'),duplicate_of=dup,sha256=x['sha256'],extraction_status=status))
+for source in sources:
+    source['file_name']=source['file_name'].replace('/','\\')
 missing=[('A09','10.1016/j.ijbiomac.2024.131005','椰壳木质素CD/卡拉胶包装膜'),('B01','10.1016/j.ijbiomac.2025.147132','EDA-Kraft木质素CD的30组CCD/RSM优化'),('B02','10.1039/D3GC04694J','木质素分子量与碳点性质'),('B04','10.1016/j.ccst.2024.100218','HNO3用量与结构光学性质'),('B05','10.1016/j.jiec.2018.06.005','碳化后混酸氧化木质素CD'),('B06','10.1016/j.biombioe.2026.109293','碱木质素碳点合成与Fe3+检测')]
 for st,doi,title in missing: sources.append(dict(source_file_id=None,study_id=st,file_name=None,title=title,year=None,doi=doi,source_kind='full_text_absent',pages=None,duplicate_of=None,sha256=None,extraction_status='已有文献目录有记录，本地无对应全文；不从摘要填实验值。'))
 
@@ -286,11 +291,14 @@ for row in original:
         other=row.copy(); other['measurement_id']=f'M{len(M)+1:04}'; other['endpoint']='bacterial_killing_pct'; other['value']=round(100-row['value'],8); other['data_status']='derived'; other['value_raw']=f'100 - {row["value"]}'; other['notes']=(other['notes'] or '')+f' 派生自{row["measurement_id"]}；不能同时作为独立训练样本。'; M.append(other)
 
 # An antibacterial learning table: one row per reported assay endpoint, joined only to its parent CD.
+additional_routes,additional_queue=append_records(syn,ingredient,proc,form,meas,issue,R)
+extend_sources(sources,manifest)
 sm={r['sample_id']:r for r in S}; fm={r['formulation_id']:r for r in F}; train=[]
 props=collections.defaultdict(dict)
 for row in M:
     if row['entity_id'] in sm and row['endpoint'] in ['diameter_TEM_nm','PLQY_pct','singlet_oxygen_QY_pct','XPS_N_pct','XPS_O_pct','PL_lifetime_ns'] and row['regression_eligible']==1 and row['value'] is not None: props[row['entity_id']][row['endpoint']]=row['value']
 antibacterial={'bacterial_survival_pct','bacterial_inhibition_pct','bacterial_killing_pct','bacterial_inactivation_pct','bacterial_colony_reduction_pct','zone_of_inhibition_mm','contact_growth_inhibition','zone_observation','bacterial_colony_observation','microbial_penetration_growth'}
+antibacterial.update({'MIC_ug_mL','MIC50_ug_mL','MBC_ug_mL','bacterial_log10_reduction'})
 for row in M:
     if row['endpoint'] not in antibacterial: continue
     f=fm.get(row['entity_id']); sid=f['parent_sample_id'] if f else row['entity_id']; s=sm.get(sid,{})
@@ -300,7 +308,7 @@ for row in M:
     tr['split_group']=row['study_id']; tr['PET_recipe_label_available']=0
     tr['intrinsic_CD_evidence']='free_CD' if row['material_context']=='free_CD' else 'requires_H2O2' if row['material_context']=='free_CD_with_H2O2' else 'composite_or_control'
     tr['PET_transfer_use']='hypothesis_only_no_PET_validation'
-    tr['default_training_use']='exclude_conflict' if row['data_status']=='conflict' else 'exclude_no_numeric_label' if row['value'] is None else 'qualitative_only' if row['data_status']=='qualitative' else 'exclude_reported_zero_censoring' if row['relation']=='reported_zero' else 'derived_do_not_duplicate' if row['data_status']=='derived' else 'separate_cofactor_assay' if row['material_context']=='free_CD_with_H2O2' else 'separate_composite_assay' if row['material_context']!='free_CD' else 'nonPET_transfer_evidence'
+    tr['default_training_use']='exclude_conflict' if row['data_status']=='conflict' else 'exclude_no_numeric_label' if row['value'] is None else 'qualitative_only' if row['data_status']=='qualitative' else 'exclude_reported_zero_censoring' if row['relation']=='reported_zero' else 'derived_do_not_duplicate' if row['data_status']=='derived' else 'exclude_source_flag' if not row['regression_eligible'] else 'separate_cofactor_assay' if row['material_context']=='free_CD_with_H2O2' else 'separate_composite_assay' if row['material_context']!='free_CD' else 'nonPET_transfer_evidence'
     train.append(tr)
 
 routes=[
@@ -354,6 +362,19 @@ guide=[
 ('复核队列','待核查表记录单位冲突、缺失配方、图表矛盾；图中只有曲线/柱高而无数值标签的点不估读填数。'),
 ('更新日期','2026-10-16；仅以用户本地提供文件为依据，没有联网补全文或混入摘要推测值。')]
 
+routes.extend(additional_routes)
+figure_queue.extend(additional_queue)
+free_exact=[r for r in train if r['material_context']=='free_CD' and r['regression_eligible']==1 and r['data_status']!='derived']
+updates={
+    '当前覆盖':'在原22份文件上追加抗菌目录20份PDF及单独综述1份。合计22篇去重原始研究（19篇有抗菌相关试验、3篇合成/机制背景）、3份SI、12篇综述、原2份重复PDF及4份项目背景。原目录6篇缺文仍保留。',
+    '本体抗菌数值覆盖':f'当前明确、非冲突、非派生且regression_eligible=1的游离CD抗菌终点{len(free_exact)}条，来自{len({r["sample_id"] for r in free_exact})}个CD样品。MIC/MIC50/MBC/抑菌圈/失活率不可混成单一标签，条数不等于独立配方数。',
+    '标签分开':'新增MIC、MIC50、MBC及log10降低量端点，分别储存；MIC50是50%抑制，不能当无可见生长MIC。剂量计量对象见dose_basis；含PpIX当量的结果不当CD净质量。',
+    '综述':'原始全文与综述二次机制/区间/AI表格继续分开。新增C12为用户指定精读综述，含异质MIC区间、机制与AI/ML索引；不将综述类别范围展开为实验行。T01-T20为原始研究路线索引，不含PET验证。',
+    '来源定位':'PDF页码从文件第一页起算；旧F01-F22文件名相对木质素文献内层目录；新F23-F43文件名相对项目根目录。SI/综述与主文共享研究ID以防重复计数。',
+    '范围说明':'重点覆盖配方、制备/纯化、原文明确抗菌数值及粒径/电荷/XPS/光学性质；新增微波/熔融/电化学过程。未逐点数字化全图；动物伤口/食品保存/完整组学和力学数据未当作CD本体抗菌标签。D12作物抗氧化、D13苯酚降解、C11 MXene只作背景。',
+}
+guide=[(a,updates.get(a,b)) for a,b in guide]
+guide.append(('本次增补与模型版本','2026-10-16补充“抗菌文献”及指定机制综述；保留旧样品/M/C/P/R编号和原始记录。首版CUDA模型继续对应其已冻结的16行A08数据，本次不自动重训或覆盖模型。'))
 tables={'路线筛选':routes,'抗菌训练长表':train,'碳点合成':S,'配方组分':C,'工艺步骤':P,'复合体系':F,'性能测量':M,'综述二次数据':R,'来源与缺文':sources,'待核查':Q,'图表补录索引':figure_queue,'PET实验录入':[],'建库说明':[{'topic':a,'description':b} for a,b in guide]}
 headers={k:list(v[0]) if v else pet_fields for k,v in tables.items()}
 
@@ -374,6 +395,7 @@ labels.update({
 for k in pet_fields:
     labels.setdefault(k,('PET后续实测录入字段；按列名单位记录，不填推测值','输入/标签/条件'))
 dictionary=[]
+labels['time_h']=('碳点主合成步骤时长；微波/电化学为通电时间，分阶段/冷却间隔见工艺和备注','h')
 for tab,hs in headers.items():
     for key in hs:
         zh,role=labels.get(key,(key,'见列名'))
@@ -381,6 +403,12 @@ for tab,hs in headers.items():
 endpoint_defs={
 'diameter_TEM_nm':'碳点TEM平均粒径；范围与点值分开','height_AFM_nm':'AFM高度，不能替代TEM直径','PLQY_pct':'荧光量子产率','singlet_oxygen_QY_pct':'单线态氧量子产率，不能替代PLQY','mass_yield_pct':'干燥CD质量/该论文指定原料质量×100','PL_lifetime_ns':'文献平均荧光寿命','Raman_IG_ID':'Raman IG/ID；不是ID/IG','Raman_carbonyl_area_pct':'Raman碳酰基拟合峰面积百分比','lattice_spacing_nm':'HRTEM晶格间距','emission_peak_nm':'发射峰波长','excitation_peak_nm':'最强PL激发波长','absorption_peak_nm':'吸收峰波长','precursor_Mw_g_mol':'明确指定木质素前驱体重均分子量','precursor_Mn_g_mol':'明确指定木质素前驱体数均分子量','precursor_PDI':'木质素Mw/Mn；不是DLS粒径分散系数','bacterial_survival_pct':'相对指定对照的细菌存活率','bacterial_killing_pct':'杀菌率；若由存活率转换有derived标记','bacterial_inhibition_pct':'原文称抑菌率，保留该名称','bacterial_inactivation_pct':'附着细菌失活率，指定对照非常关键','bacterial_colony_reduction_pct':'原文菌落减少范围，A04存在单位冲突','zone_of_inhibition_mm':'抑菌圈总径，未扣纸片直径','contact_growth_inhibition':'0/1为定性接触生长抑制观察，不能当百分数','zone_observation':'无可见抑菌圈的定性观察，无数值标签','bacterial_colony_observation':'未检出菌落的定性观察，不强行换成100%','microbial_penetration_growth':'0为屏障后培养液无生长；不是CD杀菌率','cell_viability_pct':'细胞存活百分比，非细菌标签','cell_viability_reduction_pct':'相对细胞存活下降百分比，非细菌标签','fiber_diameter_SEM_nm':'复合纤维SEM直径，非碳点粒径','solution_viscosity_cP':'纺丝前溶液黏度','suspension_CD_mg_g':'CD悬浮液质量浓度，非合成产率','CD_encapsulation_pct':'CD包封效率','curcumin_encapsulation_pct':'姜黄素包封效率'}
 endpoint_defs['zone_of_inhibition_mm']='原文抑菌圈ZOI数值，是否包含纸片直径未明确；保留原值，跨论文前核查定义'
+endpoint_defs.update({'MIC_ug_mL':'原文最小抑菌浓度；阈值/协议/计量对象见method与dose_basis，未知条件不填补',
+    'MIC50_ug_mL':'50%抑制浓度，区别于无可见生长的MIC', 'MBC_ug_mL':'原文最小杀菌浓度；杀菌阈值按该文定义',
+    'bacterial_log10_reduction':'原文log10 CFU/mL降低量；不与菌数绝对log或杀菌百分数混合',
+    'zeta_mV':'被测实体的zeta电位；介质及pH会改变数值，不视为与配方无关的常数',
+    'Raman_ID_IG':'Raman ID/IG，与IG/ID分别储存', 'drug_loading_content_pct':'药物质量/纳米杂化物质量百分比，非CD产率',
+    'surface_carboxyl_mmol_g':'表面羧基含量；非抗菌标签'})
 for e in sorted({r['endpoint'] for r in M}):
     definition=endpoint_defs.get(e,'XPS表面元素百分比；不自动推断质量分数/原子分数' if e.startswith('XPS_') else '纳米酶米氏常数/最大速率；底物与单位由端点及unit明确')
     dictionary.append(dict(table='性能测量 endpoint枚举',field=e,definition_zh=definition,unit_or_role=next(r['unit'] for r in M if r['endpoint']==e),missing_policy='无测量不标0/负例'))
@@ -393,14 +421,14 @@ for name,rows in tables.items(): writecsv(name,rows,headers[name])
 payload={'tables':tables,'headers':headers,'summary':{k:len(v) for k,v in tables.items()}}
 (ROOT/'tmp'/'database.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf-8')
 readme='# PET共前驱体筛选用木质素碳点文献数据库\n\n'+'\n\n'.join(f'## {a}\n\n{b}' for a,b in guide)+'\n\n## 数据量\n\n'+'\n'.join(f'- {k}：{len(v)}行' for k,v in tables.items())+'\n\n原始文件不作修改。CSV采用UTF-8 BOM，空字段表示缺失。以字段字典解释单位与列含义。\n'
-(OUT/'建库与建模说明.md').write_text(readme,encoding='utf-8')
+(OUT/'建库与建模说明.md').write_text(readme+REVIEW_READING,encoding='utf-8')
 with zipfile.ZipFile(OUT/'机器学习CSV数据包.zip','w',zipfile.ZIP_DEFLATED) as z:
     for p in sorted(CSV.glob('*.csv')): z.write(p,'csv/'+p.name)
     z.write(OUT/'建库与建模说明.md','建库与建模说明.md')
 print(json.dumps(payload['summary'],ensure_ascii=False))
 
 # Data-integrity checks, independent of Excel rendering.
-assert len(S)==20
+assert len(S)>=20
 assert len({r['sample_id'] for r in S})==len(S)
 assert len({r['measurement_id'] for r in M})==len(M)
 assert all(r['study_id'] in studies for r in M)

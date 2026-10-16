@@ -15,6 +15,8 @@ python -m venv .venv
 
 `extract_sources.py` 读取原始 PDF、Word XML 和已有 Excel，输出 `tmp/extracted/`。`build_database.py` 将逐项核对的文献事实组织为数据表，输出 CSV、数据包及 `tmp/database.json`。
 
+来源包括原木质素文件夹与“抗菌文献”。`data/source_registry.json` 固定已有F编号/路径/哈希，新文件追加新编号；原文消失或哈希改变时中止提取，不重排已有编号。`append_antibacterial.py` 保存新增全文的核对记录，在旧250条测量之后追加，以保持旧ID。
+
 **这不是能自动理解任意新论文的通用抽取器。** `build_database.py` 中的文献事实是本次经人工语义核对后编码的记录。加入新论文时，需要同步更新来源映射、样品、测量和疑点，再核查出处。
 
 ## Excel
@@ -35,6 +37,8 @@ node scripts/build_workbook.mjs '抗菌训练长表,性能测量,字段字典'
 ```
 
 修改工作簿时，应遵循当前环境的表格技能要求。预览图和验证报告保存在 `tmp/`，不进入 Git。
+
+已有同名Excel时，构建脚本导入原文件、扩展原生表并写入新增/更新内容，保留表名、顺序、宽度和冻结窗格；不创建并行版本。列结构变化或减少原有行时中止，须显式迁移。支持保留表格格式的追加与重复运行。
 
 ## 数据扩充
 

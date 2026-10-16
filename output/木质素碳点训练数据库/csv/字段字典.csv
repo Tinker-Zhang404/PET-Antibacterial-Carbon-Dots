@@ -84,7 +84,7 @@
 碳点合成,precursor_fraction,木质素分级组分,输入,空值不等于0；不得猜测填补
 碳点合成,method,测定方法，合成表中为制备方法,条件,空值不等于0；不得猜测填补
 碳点合成,temperature_C,该表所述步骤/测试温度,°C,空值不等于0；不得猜测填补
-碳点合成,time_h,碳点水热保温时间,h,空值不等于0；不得猜测填补
+碳点合成,time_h,碳点主合成步骤时长；微波/电化学为通电时间，分阶段/冷却间隔见工艺和备注,h,空值不等于0；不得猜测填补
 碳点合成,water_mL,明确的水加入体积,mL,空值不等于0；不得猜测填补
 碳点合成,precursor_mass_g,实际碳点制备前驱体质量；不含共同酸解批次,g,空值不等于0；不得猜测填补
 碳点合成,precursor_conc_mg_mL,按明确水体积计算的前驱体质量浓度,mg/mL,空值不等于0；不得猜测填补
@@ -255,7 +255,7 @@ PET实验录入,solvent_volume_mL,实际溶剂总体积,mL,空值不等于0；�
 PET实验录入,initial_pH,碳点反应起始pH,pH,空值不等于0；不得猜测填补
 PET实验录入,method,测定方法，合成表中为制备方法,条件,空值不等于0；不得猜测填补
 PET实验录入,temperature_C,该表所述步骤/测试温度,°C,空值不等于0；不得猜测填补
-PET实验录入,time_h,碳点水热保温时间,h,空值不等于0；不得猜测填补
+PET实验录入,time_h,碳点主合成步骤时长；微波/电化学为通电时间，分阶段/冷却间隔见工艺和备注,h,空值不等于0；不得猜测填补
 PET实验录入,purification,离心/过滤/透析/色谱等实际纯化方法与参数,输入,空值不等于0；不得猜测填补
 PET实验录入,CD_yield_pct,CD实测质量产率，必须在notes说明分母PET或总碳源,%,空值不等于0；不得猜测填补
 PET实验录入,diameter_TEM_nm,纯化后CD的TEM平均粒径,nm,空值不等于0；不得猜测填补
@@ -286,31 +286,41 @@ PET实验录入,notes,关键定义、缺失和歧义说明,备注,空值不等�
 性能测量 endpoint枚举,CAT_Km_H2O2_mM,纳米酶米氏常数/最大速率；底物与单位由端点及unit明确,mM,无测量不标0/负例
 性能测量 endpoint枚举,CAT_Vmax_O2_mg_L_min,纳米酶米氏常数/最大速率；底物与单位由端点及unit明确,mg/L/min,无测量不标0/负例
 性能测量 endpoint枚举,CD_encapsulation_pct,CD包封效率,%,无测量不标0/负例
+性能测量 endpoint枚举,MBC_ug_mL,原文最小杀菌浓度；杀菌阈值按该文定义,ug/mL,无测量不标0/负例
+性能测量 endpoint枚举,MIC50_ug_mL,50%抑制浓度，区别于无可见生长的MIC,ug/mL,无测量不标0/负例
+性能测量 endpoint枚举,MIC_ug_mL,原文最小抑菌浓度；阈值/协议/计量对象见method与dose_basis，未知条件不填补,ug/mL,无测量不标0/负例
 性能测量 endpoint枚举,PLQY_pct,荧光量子产率,%,无测量不标0/负例
 性能测量 endpoint枚举,PL_lifetime_ns,文献平均荧光寿命,ns,无测量不标0/负例
 性能测量 endpoint枚举,POD_Km_H2O2_mM,纳米酶米氏常数/最大速率；底物与单位由端点及unit明确,mM,无测量不标0/负例
 性能测量 endpoint枚举,POD_Km_TMB_mM,纳米酶米氏常数/最大速率；底物与单位由端点及unit明确,mM,无测量不标0/负例
 性能测量 endpoint枚举,POD_Vmax_H2O2_M_s,纳米酶米氏常数/最大速率；底物与单位由端点及unit明确,M/s,无测量不标0/负例
 性能测量 endpoint枚举,POD_Vmax_TMB_M_s,纳米酶米氏常数/最大速率；底物与单位由端点及unit明确,M/s,无测量不标0/负例
+性能测量 endpoint枚举,Raman_ID_IG,Raman ID/IG，与IG/ID分别储存,ratio,无测量不标0/负例
 性能测量 endpoint枚举,Raman_IG_ID,Raman IG/ID；不是ID/IG,ratio,无测量不标0/负例
 性能测量 endpoint枚举,Raman_carbonyl_area_pct,Raman碳酰基拟合峰面积百分比,%,无测量不标0/负例
 性能测量 endpoint枚举,XPS_C_pct,XPS表面元素百分比；不自动推断质量分数/原子分数,%,无测量不标0/负例
 性能测量 endpoint枚举,XPS_Ca_pct,XPS表面元素百分比；不自动推断质量分数/原子分数,%,无测量不标0/负例
+性能测量 endpoint枚举,XPS_Cl_pct,XPS表面元素百分比；不自动推断质量分数/原子分数,%,无测量不标0/负例
+性能测量 endpoint枚举,XPS_Co_pct,XPS表面元素百分比；不自动推断质量分数/原子分数,%,无测量不标0/负例
+性能测量 endpoint枚举,XPS_F_pct,XPS表面元素百分比；不自动推断质量分数/原子分数,%,无测量不标0/负例
 性能测量 endpoint枚举,XPS_N_pct,XPS表面元素百分比；不自动推断质量分数/原子分数,%,无测量不标0/负例
 性能测量 endpoint枚举,XPS_O_pct,XPS表面元素百分比；不自动推断质量分数/原子分数,%,无测量不标0/负例
 性能测量 endpoint枚举,XPS_S_pct,XPS表面元素百分比；不自动推断质量分数/原子分数,%,无测量不标0/负例
+性能测量 endpoint枚举,XPS_Zn_pct,XPS表面元素百分比；不自动推断质量分数/原子分数,%,无测量不标0/负例
 性能测量 endpoint枚举,absorption_peak_nm,吸收峰波长,nm,无测量不标0/负例
 性能测量 endpoint枚举,bacterial_colony_observation,未检出菌落的定性观察，不强行换成100%,,无测量不标0/负例
 性能测量 endpoint枚举,bacterial_colony_reduction_pct,原文菌落减少范围，A04存在单位冲突,%,无测量不标0/负例
 性能测量 endpoint枚举,bacterial_inactivation_pct,附着细菌失活率，指定对照非常关键,%,无测量不标0/负例
 性能测量 endpoint枚举,bacterial_inhibition_pct,原文称抑菌率，保留该名称,%,无测量不标0/负例
 性能测量 endpoint枚举,bacterial_killing_pct,杀菌率；若由存活率转换有derived标记,%,无测量不标0/负例
+性能测量 endpoint枚举,bacterial_log10_reduction,原文log10 CFU/mL降低量；不与菌数绝对log或杀菌百分数混合,log10 CFU/mL reduction,无测量不标0/负例
 性能测量 endpoint枚举,bacterial_survival_pct,相对指定对照的细菌存活率,%,无测量不标0/负例
 性能测量 endpoint枚举,cell_viability_pct,细胞存活百分比，非细菌标签,%,无测量不标0/负例
 性能测量 endpoint枚举,cell_viability_reduction_pct,相对细胞存活下降百分比，非细菌标签,%,无测量不标0/负例
 性能测量 endpoint枚举,contact_growth_inhibition,0/1为定性接触生长抑制观察，不能当百分数,binary,无测量不标0/负例
 性能测量 endpoint枚举,curcumin_encapsulation_pct,姜黄素包封效率,%,无测量不标0/负例
 性能测量 endpoint枚举,diameter_TEM_nm,碳点TEM平均粒径；范围与点值分开,nm,无测量不标0/负例
+性能测量 endpoint枚举,drug_loading_content_pct,药物质量/纳米杂化物质量百分比，非CD产率,%,无测量不标0/负例
 性能测量 endpoint枚举,emission_peak_nm,发射峰波长,nm,无测量不标0/负例
 性能测量 endpoint枚举,excitation_peak_nm,最强PL激发波长,nm,无测量不标0/负例
 性能测量 endpoint枚举,fiber_diameter_SEM_nm,复合纤维SEM直径，非碳点粒径,nm,无测量不标0/负例
@@ -323,6 +333,8 @@ PET实验录入,notes,关键定义、缺失和歧义说明,备注,空值不等�
 性能测量 endpoint枚举,precursor_PDI,木质素Mw/Mn；不是DLS粒径分散系数,ratio,无测量不标0/负例
 性能测量 endpoint枚举,singlet_oxygen_QY_pct,单线态氧量子产率，不能替代PLQY,%,无测量不标0/负例
 性能测量 endpoint枚举,solution_viscosity_cP,纺丝前溶液黏度,cP,无测量不标0/负例
+性能测量 endpoint枚举,surface_carboxyl_mmol_g,表面羧基含量；非抗菌标签,mmol/g,无测量不标0/负例
 性能测量 endpoint枚举,suspension_CD_mg_g,CD悬浮液质量浓度，非合成产率,mg/g,无测量不标0/负例
+性能测量 endpoint枚举,zeta_mV,被测实体的zeta电位；介质及pH会改变数值，不视为与配方无关的常数,mV,无测量不标0/负例
 性能测量 endpoint枚举,zone_observation,无可见抑菌圈的定性观察，无数值标签,,无测量不标0/负例
 性能测量 endpoint枚举,zone_of_inhibition_mm,原文抑菌圈ZOI数值，是否包含纸片直径未明确；保留原值，跨论文前核查定义,mm,无测量不标0/负例

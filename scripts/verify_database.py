@@ -23,13 +23,17 @@ for name,records in data['tables'].items():
     print(name,'rows',len(records),'freeze',sh.freeze_panes)
 src=root/'文献-木质素基抗菌碳点'/'文献-木质素基抗菌碳点'
 for rec in json.loads((root/'tmp/extracted/manifest.json').read_text(encoding='utf8')):
-    assert hashlib.sha256((src/rec['file'].replace('\\','/')).read_bytes()).hexdigest()==rec['sha256']
+    path=root/rec['project_path'] if rec.get('project_path') else src/rec['file'].replace('\\','/')
+    assert hashlib.sha256(path.read_bytes()).hexdigest()==rec['sha256'],rec['file_id']
 train=data['tables']['抗菌训练长表']; free=[r for r in train if r['material_context']=='free_CD' and r['regression_eligible']==1 and r['data_status']!='derived']
 print('free_CD exact numeric records',len(free),'unique CD samples',len({r['sample_id'] for r in free}))
-assert len(free)==6
+assert len(free)>=6
+assert all(r['value'] is not None and r['data_status']!='conflict' for r in free)
 print('training use',dict(collections.Counter(r['default_training_use'] for r in train)))
 with zipfile.ZipFile(out/'机器学习CSV数据包.zip') as z:
     assert len(z.namelist())==len(data['tables'])+1
     assert z.testzip() is None
+    for p in (out/'csv').glob('*.csv'):
+        assert z.read('csv/'+p.name)==p.read_bytes()
 print('verified',cells,'data cells; originals unchanged; no Excel formulas/errors; CSV ZIP valid')
 (root/'tmp/verification_result.json').write_text(json.dumps({'checked_cells':cells,'sheet_count':len(wb.sheetnames),'free_CD_exact_numeric_records':len(free),'free_CD_unique_samples':len({r['sample_id'] for r in free}),'source_hashes_unchanged':True},indent=2),encoding='utf8')

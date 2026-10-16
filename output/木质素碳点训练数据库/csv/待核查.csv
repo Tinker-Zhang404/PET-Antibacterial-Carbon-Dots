@@ -12,3 +12,16 @@ Q010,A03,A03-S01,zone_of_inhibition_mm,使用6mm纸片；阳性对照K.pneumonia
 Q011,A04,A04-S01,dose_ug_mL / initial_CFU_mL,方法剂量5/10/20ug/mL，结果为5mg/mL；初始菌量写1x10^-6CFU/mL。,不改为猜测值；剂量/菌量标准列留空，抗菌数值默认排除回归。,F07,p4 §2.9; p10 §3.5
 Q012,A08,A08-all,contact_min,方法每10min取样，结果用15/45min；结论提E.coli30min达100%，正文明确45min。,保留正文明确样品对应的15/45min；结论30min不分配到特定配方。,F14,p4 methods;p8-9 results/conclusions
 Q013,A08,A08-S01,freeze_dry_pressure,冻干压力原文20MPa，明显不符合常规真空冻干表述。,只保留原文注释，不把20MPa当作可执行实验参数。,F14,p2 §2.2
+Q014,D01,D01-S01,film_loading_basis,CD储液加入量与报告wt%缺乏明确换算基准；E.coli正文log降低量未绑定时间。,保留原文配方与端点，未知时间留空，不能补为40min。,F24,p3 §2.2; p9 §3.5.2
+Q015,D02,D02-S01,missing_supporting_information,TableS1与FigS5未随新增文件提供，普通E.coli/P.aeruginosa的MIC无正文明确值。,仅记录正文明确MIC；4h杀菌率保留MIC倍数，剂量未知留空。,F25,p5 §3.2
+Q016,D03,D03-all,corrigendum,随PDF附2025勘误：Fig6c/d、Fig7c/d图片误用；220误标240；§2.5.2照射30min应40min。,采用勘误40min，保留修订DOI10.1016/j.jmrt.2025.03.171；不使用错误图片反推数值。,F26,p19-22 appended correction; p20 correction text
+Q017,D03,D03-all,dose_units,§2.5.2写0.5/5/50µM，而Fig6与§3.3.1写µg/mL；§2.5.3时间系列明确µg/mL。,时间系列采用已目视确认µg/mL；剂量系列标冲突；不把PDF抽取的mg误作毫克。,F26,p4 §§2.5.2-2.5.3; p10
+Q018,D04,D04-S01,OD600_ratio/MIC_definition,SI EqS2写1-(ODtreated-ODcontrol)/ODcontrol；正文MIC对应的OD抑制未达100%。,百分数与MIC定义保留并排除普通回归，先确认公式/阈值；MBC与OD百分数不混合。,F28/F29,SI p5 EqS2; main p5-6
+Q019,D04,D04-F01,PL_lifetime_unit,正文Zn@MC-CDs寿命写0.18nm，时间单位不成立。,不填PL_lifetime_ns，不擅改nm为ns。,F29,p9
+Q020,D06,D06-S01,dose_ug_mL,方法400uL200ug/mL CD+100uL菌液理论最终160ug/mL，结果与图仍称200ug/mL。,原文名义200保留dose_basis，标准剂量空，杀菌数值标conflict待核实。,F36,p4 Antibacterial Activity; p7 Fig7
+Q021,D07,D07-S01,PHMG_control_and_missing_SI,PHMG本身为抗菌聚合物；SI TableS2、系列配方与所有菌株MIC未提供。,标明含胍基前驱体；不声称抗菌全部源自碳核；仅记录正文3个MIC。,F37,p9 §2.3; p23 §3.2
+Q022,D09,D09-all,film_loading_and_year,§2.3写mass fractions relative toCS却使用vol%；预印本封面推荐引文2024但DOI/接受日期为2025。,保留vol%及基准冲突；来源年按2025接受版本，不猜最终卷期；35.6/99.9%未分配明确配方不自动绑定10%。,F39,p1 cover; p8 §2.3; p22 §3.5
+Q023,D10,D10-S01,biofilm_dose_units,方法p4写3.45/6.9/13.8mg/L，结果/图6与摘要写mg/mL。,生物膜标准剂量留空，不将1000倍差异自行纠正；悬浮菌6.9mg/mL在方法/结果一致。,F40,p4; p7-8 Fig6
+Q024,D11,D11-S01,MIC_range,方法只写0-100ug/mL，而MIC正文最高0.55mg/mL=550ug/mL。,原文MIC明确值保留但标conflict；不将0.54mg/mL误作0.54ug/mL，不猜额外剂量实验。,F42,p3 §2.15; p8 §3.10
+Q025,C12,C12-review,causal_strength_and_fig2,正文p5-6说明金属掺杂不必然正电，Fig2标题却概括为正电；p23 Table4将高PLQY与ROS/抗菌关联，不能据此等同。,以正文限定和实际表征为准；分别记录PLQY/ROS/抗菌；综述只作假设来源。,F43,p5-6 Fig2; p22-23 Table4
+Q026,C12,C12-review,mixed_biological_evidence,p15基因机制段引用MCF7凋亡/G0G1例子，并非细菌抗菌实验；MurD竞争抑制在p13-14又明确证据不足。,不把哺乳动物细胞周期或综述机制推断填成细菌实验标签；机制结论区分直接/间接证据。,F43,p13-15

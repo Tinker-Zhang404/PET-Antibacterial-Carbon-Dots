@@ -50,3 +50,28 @@ R048,F18,p9 Table3,[98],alkali lignin,"2,4-diaminobenzenesulfonic acid",acidolys
 R049,F18,p15 Table5,[129],Kraft lignin,H2SO4/HNO3,pyrolytic carbon then acid oxidation90C8h,8.1,2.4,560,0.1g/20mL acid,,secondary_review,0,p15 Table5；原始B05全文缺失，保留二次数据；不可将酸氧化时间当水热时间。
 R050,F18,p15 Table5,[129],Kraft lignin,H2SO4/HNO3,pyrolytic carbon then acid oxidation90C16h,11.6,2.4,560,0.1g/20mL acid,,secondary_review,0,p15 Table5；原始B05全文缺失，保留二次数据；不可将酸氧化时间当水热时间。
 R051,F18,p15 Table5,[129],Kraft lignin,H2SO4/HNO3,pyrolytic carbon then acid oxidation90C24h,13,2.4,560,0.1g/20mL acid,,secondary_review,0,p15 Table5；原始B05全文缺失，保留二次数据；不可将酸氧化时间当水热时间。
+R052,F23,p1 abstract; p18 §4.1.3,review topic index,,,N-doping;surface charge;ROS;PTT,,,,,,secondary_review,0,氮掺杂机制与前驱体索引。不要将N含量自动映射为抗菌强度；未逐条转录全部综述文献。
+R053,F27,p1 abstract; p13-14 mechanisms,review topic index,,,CDs in active food packaging,,,,,,secondary_review,0,食品保存综合结果含阻隔/聚合物贡献，不能等同游离CD杀菌率。
+R054,F32,p1 abstract,review topic index,,,physical destruction;biochemical damage;synergy,,,,,,secondary_review,0,机制综述，不新增独立配方；按原始DOI追索后去重。
+R055,F33,p1 abstract,review topic index,,,mechanism;design;applications,,,,,,secondary_review,0,抗菌表面/生物膜/食品保存和成像属于不同测试对象。
+R056,F34,p1 abstract; p16 conclusions,review topic index,,,PDT versus PTT,,,,,,secondary_review,0,光动力ROS与光热升温机制分开；记录波长/光强/时间/温度，而非仅写光照。
+R057,F41,p1 abstract; p11 §3,review topic index,,,MXene PTT background,,,,,,secondary_review,0,二维MXene非CD；所有MXene杀菌数值均不进入碳点性能表。
+R058,F43,p7 Table1; p8 comparability caveat,Tariq2023;Wang2024;Sara2024,"Fe,Zn,Cu,Co,Mn,Ag salts/metal-organic compounds",metal,metal;MIC1-32ug/mL,,,,,,secondary_review,0,跨研究汇总区间，菌株/协议/激发不同；不拆成精确MIC，不作金属优于非金属的定量排序，也不是PET实测。
+R059,F43,p7 Table1; p8 comparability caveat,Karaman2024,"glucosamine,malic acid,boric acid;N/N:S/N:P",non-metal,non-metal;MIC300-400ug/mL,,,,,,secondary_review,0,跨研究汇总区间，菌株/协议/激发不同；不拆成精确MIC，不作金属优于非金属的定量排序，也不是PET实测。
+R060,F43,p7 Table1; p8 comparability caveat,Wu2024;Chen2025,modified precursors with mixed dopants,co-doping,co-doping;MIC0.5-16ug/mL,,,,,,secondary_review,0,跨研究汇总区间，菌株/协议/激发不同；不拆成精确MIC，不作金属优于非金属的定量排序，也不是PET实测。
+R061,F43,p7 Table1; p8 comparability caveat,Jiang2024,AgNO3;AuCl,heavy metal,heavy metal;MIC0.25-8ug/mL,,,,,,secondary_review,0,跨研究汇总区间，菌株/协议/激发不同；不拆成精确MIC，不作金属优于非金属的定量排序，也不是PET实测。
+R062,F43,p7 Table1; p8 comparability caveat,Wu2023,"Gd,Ce;urea,citric acid",rare earth,rare earth;MIC16-32ug/mL,,,,,,secondary_review,0,跨研究汇总区间，菌株/协议/激发不同；不拆成精确MIC，不作金属优于非金属的定量排序，也不是PET实测。
+R063,F43,p5-6,C12 mechanistic synthesis,,,doping versus surface functionalization,,,,,,secondary_review,0,掺杂改变电子结构；胺基质子化与表面配体控制净电荷；金属掺杂不必然使CD带正电。 当前仅机制/实验设计证据，include_primary_training=0。
+R064,F43,p8-10,C12 mechanistic synthesis,,,membrane binding,,,,,,secondary_review,0,zeta、粒径、表面基团、聚集、盐/蛋白环境和菌壁组成共同影响结合；阴性电位不等于无抗菌。 当前仅机制/实验设计证据，include_primary_training=0。
+R065,F43,p10-13,C12 mechanistic synthesis,,,ROS/excitation,,,,,,secondary_review,0,光谱匹配、缺陷、ROS种类与光强/时间/氧环境相关；ROS探针及清除剂实验不足以单独证明因果。 当前仅机制/实验设计证据，include_primary_training=0。
+R066,F43,p13-14,C12 mechanistic synthesis,,,MurD hypothesis,,,,,,secondary_review,0,MurD结合/竞争抑制需酶动力学或结构验证；本地原始Qie2022见D06/F36，不重复计研究。 当前仅机制/实验设计证据，include_primary_training=0。
+R067,F43,p14-16,C12 mechanistic synthesis,,,DNA/protein/ATP,,,,,,secondary_review,0,DNA断裂、转录组、ATP下降为不同证据层级；间接组学变化不等同直接靶点结合。 当前仅机制/实验设计证据，include_primary_training=0。
+R068,F43,p16-18,C12 mechanistic synthesis,,,QS and EPS,,,,,,secondary_review,0,群体感应、生物膜形成抑制、成熟膜清除、EPS破坏与浮游菌杀菌分开；QS抑制未必直接杀菌。 当前仅机制/实验设计证据，include_primary_training=0。
+R069,F43,p18-21,C12 mechanistic synthesis,,,safety/stability,,,,,,secondary_review,0,安全依赖剂量、表面电荷、金属释放及暴露时长；不能将普通细胞存活>80%视作所有配方安全。 当前仅机制/实验设计证据，include_primary_training=0。
+R070,F43,p19 Table2,C12 mechanistic synthesis,,,theranostic platforms,,,,,,secondary_review,0,金属CD、杂化平台、生物活性配体修饰平台为综述类别；需查原始研究，不作为独立样品。 当前仅机制/实验设计证据，include_primary_training=0。
+R071,F43,p22 AI/ML; p23 Table4,Senanayake2022,,,RF/gradient boosting;reported output:emission wavelength/QY,,,,,,secondary_review,0,综述列举的模型以光学/结构预测为主；未提供本任务抗菌外部验证集或通用精度。PLQY不能替代ROS量子产率或抗菌标签。
+R072,F43,p22 AI/ML; p23 Table4,Hong2022,,,SVM/XGBoost;reported output:fluorescence/emission,,,,,,secondary_review,0,综述列举的模型以光学/结构预测为主；未提供本任务抗菌外部验证集或通用精度。PLQY不能替代ROS量子产率或抗菌标签。
+R073,F43,p22 AI/ML; p23 Table4,Duman/Jalilov2024,,,"ANN/deep learning;reported output:optical spectrum,size,QY",,,,,,secondary_review,0,综述列举的模型以光学/结构预测为主；未提供本任务抗菌外部验证集或通用精度。PLQY不能替代ROS量子产率或抗菌标签。
+R074,F43,p22 AI/ML; p23 Table4,Duman2026,,,RF/XGBoost/CatBoost;reported output:photoluminescence,,,,,,secondary_review,0,综述列举的模型以光学/结构预测为主；未提供本任务抗菌外部验证集或通用精度。PLQY不能替代ROS量子产率或抗菌标签。
+R075,F43,p22 AI/ML; p23 Table4,Mohammadzadeh2024,,,ML+optimization;reported output:synthesis parameters,,,,,,secondary_review,0,综述列举的模型以光学/结构预测为主；未提供本任务抗菌外部验证集或通用精度。PLQY不能替代ROS量子产率或抗菌标签。
+R076,F43,p22 AI/ML; p23 Table4,Ren2026,,,QY prediction;reported output:QY,,,,,,secondary_review,0,综述列举的模型以光学/结构预测为主；未提供本任务抗菌外部验证集或通用精度。PLQY不能替代ROS量子产率或抗菌标签。

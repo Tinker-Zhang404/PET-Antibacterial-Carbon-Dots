@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { Workbook, SpreadsheetFile } from '@oai/artifact-tool';
+import { Workbook, SpreadsheetFile, FileBlob } from '@oai/artifact-tool';
 
 const root=process.cwd();
 const data=JSON.parse(await fs.readFile(path.join(root,'tmp/database.json'),'utf8'));
@@ -8,17 +8,54 @@ const output=path.join(root,'output/木质素碳点训练数据库');
 const preview=path.join(root,'tmp/workbook_previews');
 const selectedRenders=process.argv[2]?.split(',');
 await fs.mkdir(preview,{recursive:true});
-const wb=Workbook.create();
+const bookPath=path.join(output,'PET搭配材料筛选_木质素碳点文献数据库.xlsx');
+let updating=false;
+try { await fs.access(bookPath); updating=true; } catch {}
+const wb=updating ? await SpreadsheetFile.importXlsx(await FileBlob.load(bookPath)) : Workbook.create();
 function col(n){let s='';while(n){n--;s=String.fromCharCode(65+n%26)+s;n=Math.floor(n/26);}return s;}
 const longHeaders=new Set(['notes','source_locator','source_file_id','processing','evidence_text','missing_fields','conditions_raw','description','issue','handling','definition_zh','activity_evidence','required_condition','reported_method','transfer_limit','precursor','operation','candidate','data_to_extract','available_conditions']);
 const colors={'路线筛选':'#234D43','抗菌训练长表':'#1F4E78','碳点合成':'#3C6587','建库说明':'#73767B','PET实验录入':'#9A6B24'};
 let tableNo=0;
 for(const [name,rows] of Object.entries(data.tables)){
-  const sh=wb.worksheets.add(name); sh.showGridLines=false;
+  const sh=updating ? wb.worksheets.getItem(name) : wb.worksheets.add(name);
+  if(!updating)sh.showGridLines=false;
   if(colors[name]) sh.tabColor=colors[name];
   const headers=data.headers[name];
   const matrix=[headers,...rows.map(r=>headers.map(h=>{const v=r[h]??null; return typeof v==='string'&&v.startsWith('=')?"'"+v:v;}))];
   const last=col(headers.length), end=Math.max(matrix.length,2);
+  if(updating){
+    const old=sh.getUsedRange(true).values;
+    if(JSON.stringify(old[0])!==JSON.stringify(headers))throw new Error(`Column change requires explicit migration: ${name}`);
+    const oldRows=old.length;
+    if(matrix.length<oldRows)throw new Error(`Refusing to drop existing rows: ${name}`);
+    if(matrix.length>oldRows){
+      sh.tables.items[0].rows.add(null,matrix.slice(oldRows));
+      const added=sh.getRange(`A${oldRows+1}:${last}${matrix.length}`);
+      added.format.font={name:'Microsoft YaHei',size:10,color:'#243746'};
+      added.format.verticalAlignment='center';
+      for(let j=0;j<headers.length;j++){
+        const letter=col(j+1), numeric=rows.some(r=>typeof r[headers[j]]==='number');
+        const body=sh.getRange(`${letter}${oldRows+1}:${letter}${matrix.length}`);
+        body.format.horizontalAlignment=numeric?'right':'left';
+        body.format.wrapText=!numeric;
+        const h=headers[j];
+        if(numeric)body.setNumberFormat(h.endsWith('year')||h==='year'||h.endsWith('_id')||h==='step_order'||h==='n'||h==='pet_present'||h.includes('eligible')||h==='include_primary_training'?'0':'General');
+      }
+      added.format.autofitRows();
+    }
+    sh.getRange(`A1:${last}${matrix.length}`).values=matrix;
+    for(let i=1;i<Math.min(oldRows,matrix.length);i++){
+      if(JSON.stringify(old[i])!==JSON.stringify(matrix[i]))sh.getRange(`A${i+1}:${last}${i+1}`).format.autofitRows();
+    }
+    if(name==='待核查'&&matrix.length>oldRows)sh.getRange(`D${oldRows+1}:F${end}`).format.fill='#FFF4D6';
+    // Source/guide wording changes may alter wrapped row heights; keep all other formatting.
+    if(name==='建库说明')sh.getRange(`A2:B${end}`).format.autofitRows();
+    for(let i=oldRows+1;i<=matrix.length;i++){
+      const rr=sh.getRange(`A${i}:${last}${i}`); if(rr.format.rowHeight<30)rr.format.rowHeight=30;
+    }
+    console.log(`updated ${name}: ${rows.length} rows, ${headers.length} columns`);
+    continue;
+  }
   sh.getRange(`A1:${last}${matrix.length}`).values=matrix;
   const all=sh.getRange(`A1:${last}${end}`);
   all.format.font={name:'Microsoft YaHei',size:10,color:'#243746'};
@@ -68,7 +105,7 @@ wb.recalculate();
 console.log((await wb.inspect({kind:'table',range:'碳点合成!A1:J5',include:'values',tableMaxRows:5,tableMaxCols:10,maxChars:1800})).ndjson);
 console.log((await wb.inspect({kind:'match',searchTerm:'#REF!|#DIV/0!|#VALUE!|#NAME\\?|#NUM!|#SPILL!|#CALC!',options:{useRegex:true,maxResults:20},summary:'formula error scan',maxChars:1200})).ndjson);
 const file=await SpreadsheetFile.exportXlsx(wb);
-await file.save(path.join(output,'PET搭配材料筛选_木质素碳点文献数据库.xlsx'));
+await file.save(bookPath);
 console.log('xlsx exported');
 for(const [name,rows] of Object.entries(data.tables)){
   if(selectedRenders&&!selectedRenders.includes(name))continue;
