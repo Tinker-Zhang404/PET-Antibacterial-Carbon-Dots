@@ -76,3 +76,21 @@ git clone https://github.com/Tinker-Zhang404/-.git
 ```
 
 第三方论文及图片的权利归各自权利人；本仓库不为这些原始资料重新授予许可。
+
+## 第一版传统模型基线
+
+新增 [CUDA XGBoost 训练报告](output/training/literature_pva_xgb_cuda_v1/report.md)、[模型及元数据](models/literature_pva_xgb_cuda_v1/)和可复现训练/预测脚本。
+
+该模型仅针对 **A08 单篇论文中 PVA/木质素碳点膜的抗菌结果**：16 条观察、3 个膜添加水平、1 个碳点合成样品。输入为添加百分数、接触时间、光照和菌种；按膜配方完整留出验证，并与训练折均值基线比较。不将其他论文、抑菌圈、定性结果或重复派生值混入训练。
+
+它用于建立传统模型流程及验证基线，**不能预测 PET 共前驱体/掺杂剂配方，也未获得跨论文或独立 PET 实验验证**。详见报告中的数据筛选、折外误差和源文献歧义说明。
+
+```powershell
+python -m venv .venv-ml
+.\.venv-ml\Scripts\python -m pip install -r requirements-ml.lock.txt
+.\.venv-ml\Scripts\python scripts/train_baseline.py
+.\.venv-ml\Scripts\python -m unittest discover -s tests -v
+.\.venv-ml\Scripts\python scripts/predict_baseline.py --input examples/non_pet_pva_prediction.csv --output tmp/example_prediction.csv
+```
+
+训练需要支持当前 XGBoost CUDA 构建的 NVIDIA 显卡和驱动；程序核查每折实际设备，禁止静默回退 CPU。数字/类别编码与均值对照由 CPU 完成，树模型训练使用 GPU。预测入口拒绝 PET、其他材料层级、未知菌种/光照以及训练数值范围外的输入。

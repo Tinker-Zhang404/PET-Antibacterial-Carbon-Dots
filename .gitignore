@@ -1,6 +1,7 @@
 # Local environments and editor settings
 .idea/
 .venv/
+.venv-ml/
 venv/
 node_modules/
 __pycache__/

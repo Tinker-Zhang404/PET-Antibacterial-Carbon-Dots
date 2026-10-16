@@ -1,0 +1,141 @@
+{
+  "scope": "non_PET_PVA_lignin_CD_film_only",
+  "model_name": "literature_pva_xgb_cuda_v1",
+  "run_date": "2026-10-16",
+  "validation": "leave_one_formulation_out_within_A08",
+  "hyperparameter_search": false,
+  "actual_training_device": "cuda:0",
+  "gpu_inventory": "0, NVIDIA GeForce RTX 4080 Laptop GPU, 617.14, 12282 MiB",
+  "xgboost_cuda_build": {
+    "CUDA_VERSION": [
+      13,
+      3
+    ],
+    "USE_CUDA": true
+  },
+  "observations": 16,
+  "independent_formulations": 3,
+  "independent_CD_samples": 1,
+  "independent_papers": 1,
+  "pooled_oof": {
+    "xgboost_cuda": {
+      "MAE_percentage_points": 17.597940769195556,
+      "RMSE_percentage_points": 21.006965842030628,
+      "R2": 0.3761661285784913,
+      "macro_fold_MAE_percentage_points": 17.609883371988932
+    },
+    "dummy_mean": {
+      "MAE_percentage_points": 25.237897727272728,
+      "RMSE_percentage_points": 28.874088643662265,
+      "R2": -0.17857944809897974,
+      "macro_fold_MAE_percentage_points": 25.199424242424243
+    }
+  },
+  "sensitivity_without_reported_100_pct": {
+    "n": 14,
+    "pooled_oof": {
+      "xgboost_cuda": {
+        "MAE_percentage_points": 16.242756260463167,
+        "RMSE_percentage_points": 20.803605572222292,
+        "R2": 0.29617539737843157,
+        "macro_fold_MAE_percentage_points": 16.433652198791503
+      },
+      "dummy_mean": {
+        "MAE_percentage_points": 23.070746031746033,
+        "RMSE_percentage_points": 26.380211659352543,
+        "R2": -0.13173246170133712,
+        "macro_fold_MAE_percentage_points": 23.342462962962966
+      }
+    }
+  },
+  "PET_validated": false,
+  "cross_paper_validated": false,
+  "input_data_sha256": "659b67405c099ae40edd7b16385eb4cda9589b90b8c6d8516f31dc7a11bdc434",
+  "features": [
+    "cd_loading_pct",
+    "contact_min",
+    "light",
+    "organism"
+  ],
+  "target": "target_killing_pct",
+  "target_unit": "percent_0_to_100",
+  "algorithm": "XGBRegressor",
+  "hyperparameters": {
+    "n_estimators": 120,
+    "max_depth": 2,
+    "learning_rate": 0.05,
+    "min_child_weight": 2,
+    "subsample": 1.0,
+    "colsample_bytree": 1.0,
+    "reg_lambda": 10.0,
+    "reg_alpha": 0.0,
+    "objective": "reg:squarederror",
+    "tree_method": "hist",
+    "device": "cuda:0",
+    "random_state": 20261016,
+    "n_jobs": 1,
+    "verbosity": 1
+  },
+  "prediction_domain": {
+    "numeric_ranges": {
+      "cd_loading_pct": [
+        5.0,
+        20.0
+      ],
+      "contact_min": [
+        15.0,
+        45.0
+      ]
+    },
+    "categories": {
+      "light": [
+        "dark",
+        "visible"
+      ],
+      "organism": [
+        "Escherichia coli",
+        "Staphylococcus aureus"
+      ]
+    }
+  },
+  "python": "3.12.14",
+  "library_versions": {
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0",
+    "matplotlib": "3.11.2",
+    "xgboost": "3.4.1"
+  },
+  "source_study": {
+    "study_id": "A08",
+    "doi": "10.1002/pen.70108",
+    "source_file_id": "F14",
+    "source_pages": "p8-9 §3.5; p4 methods"
+  },
+  "model_sha256": "1abee0beb0df86b4e8f69364417d6f46d6b98c3231db2a9eb5d58f5abf61cbaf",
+  "limitations": [
+    "One non-PET CD synthesis, three PVA film loading levels, one paper.",
+    "No support for co-precursor, dopant or synthesis-condition selection.",
+    "Reported wt% denominator and assay sampling times have source ambiguities.",
+    "Zero-survival source-flagged row excluded; reported 100% endpoints retained with sensitivity analysis.",
+    "No calibrated prediction interval or independent external test set.",
+    "Literature-reported aggregate outcomes; replicate-level data unavailable."
+  ],
+  "fixed_source_conditions": {
+    "sample_id": "A08-S01",
+    "synthesis_temperature_C": "220",
+    "synthesis_time_h": "12",
+    "precursor": "enzymatic hydrolysis lignin",
+    "precursor_mass_g": "1",
+    "water_mL": "20",
+    "additive": "citric acid",
+    "additive_precursor_mass_ratio": "0.8",
+    "material_mass_g": "0.1",
+    "assay_volume_mL": "10",
+    "initial_CFU_mL": "1000000.0",
+    "medium": "0.85wt% saline; PCA plating",
+    "control": "untreated sample",
+    "incubation_h": "24"
+  }
+}
