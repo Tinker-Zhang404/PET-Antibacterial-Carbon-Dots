@@ -1,0 +1,10 @@
+﻿route_id,study_id,candidate,evidence_sample,reported_method,activity_evidence,required_condition,intrinsic_evidence,PET_validation,transfer_limit
+T01,A01,木质素 + 乙二胺,A01-S04,水热200°C12h；EDA原文6wt%（分母不明）,"游离N,L-CQDs3；30ug/mL；S.aureus99.57%、E.coli93.60%（浓度筛选）",氙灯100mW/cm²；15min（FigS5）,游离碳点光激活抗菌,无PET共同前驱体实测,可作为PET+木质素/EDA候选假设；不能直接把6wt%当作PET基准用量。
+T02,A02,木质素 + 草酸,A02-S02,酸:AL等质量；水热180°C12h；AL绝对质量缺失,LCDs-OA40ug/mL；E.coli存活2.6±0.1%、S.aureus1.3±0.2%,H2O2；pH4.5；37°C4h,碳点催化辅助抗菌,无PET共同前驱体实测,需外部过氧化氢，不能直接作为无辅助自抗菌标签。
+T03,A03,植物来源木质素纳米粒,A03-S01,LNP:水1:30g:mL；水热180°C12h；不加催化剂,50ug/纸片；24h S.aureus21.77±0.57mm、K.pneumoniae20.27±1.30mm,37°C培养24h；试验未指定光激活,游离LQD纸片扩散抗菌,无PET共同前驱体实测,抑菌圈受扩散影响；不是PET+木质素的MIC/杀菌率证据。
+T04,A04,椰壳碳 + 邻苯二胺,A04-S01,20mg椰壳碳+50mg o-PDA；180°C12h,游离CD减菌约15-20%；浓度单位冲突,接触4h；剂量mg/mL与ug/mL冲突,有游离CD弱抗菌描述但数值有歧义,无PET共同前驱体实测,先核查原文/作者；Hg复合结果排除PET候选。
+T05,A05,木质素 + H2O2,A05-S01,100mg/30mL水+2mL30%H2O2；180°C10min,CD500修饰TFC膜，UV下E.coli99.92±0.03%,PDA/TFC基底；UV365nm3h,仅复合膜证据,无PET共同前驱体实测,不能把膜抗菌率标为游离CD抗菌率。
+T06,A06,Kraft木质素,A06-S01,1.05g/35mL水；180°C5.5h,GMA/CD水凝胶前驱液接触抑菌，未见抑菌圈,GMA/明胶基质,仅水凝胶前驱液证据,无PET共同前驱体实测,无游离CD定量抗菌标签。
+T07,A07,Kraft木质素（姜黄素另列）,A07-S01,2.5wt%木质素水溶液；180°C5.5h,PLA/CD与PLA/CD/Cur纤维接触抑菌；未见抑菌圈,PLA纤维；部分配方含10wt%姜黄素,仅复合纤维证据,无PET共同前驱体实测,姜黄素独立活性/PLA屏障不可归因于CD。
+T08,A08,酶解木质素 + 柠檬酸,A08-S01,1g木质素+0.8g柠檬酸/20mL水；220°C12h,PVA20%LCQD膜；45min可见光S.aureus杀菌88.44%；E.coli100%,PVA复合膜；氙灯300W λ>420nm,仅复合膜证据,无PET共同前驱体实测,不能用复合膜结果证明PET碳点本体抗菌。
+T09,B03,木质素 + 邻氨基苯磺酸,B03-S01,AL0.8g+o-ABSA0.6g/30mL水70°C1h；分级后200°C12h,QY19.5%、产率16.5%；本研究无抗菌试验,抗菌终点未测,仅合成/构效证据,无PET共同前驱体实测,荧光增强不等于抗菌增强；未测抗菌不得标0或1。

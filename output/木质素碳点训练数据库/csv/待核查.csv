@@ -1,0 +1,14 @@
+﻿issue_id,study_id,entity_id,field,issue,handling,source_file_id,source_locator
+Q001,B03,B03-S03,PL_lifetime_ns,p5正文将CQDs1-3列成四个寿命值，含5.90；Table2列CQDs3为5.09。,采用明确逐样品Table2=5.09 ns；保留冲突记录。,F01,p5 §3.2; p6 Table2
+Q002,A02,A02-S02,strain,正文用MDR E.coli/S.aureus；SI材料列ATCC25922/25923且实验段有E.coli subtilis笔误。,保留物种与MDR原文，不强行赋予ATCC编号。,F04/F08,p8 §3.5; SI P26/P34
+Q003,A02,A02-S02,precursor_mass_g,正文未给AL绝对投料量，仅20mL水和酸/AL等质量。,绝对投料留空；不根据同类文献补值。,F04,p2 §§2.1-2.2
+Q004,A01,A01-S03,XPS_C_N_O_pct,SI TableS1 C+N+O合计99.67%，偏离100%。,保留原值、标conflict，默认不作回归标签；不归一化为100%。,F09,Table S1
+Q005,A01,A01-S04,XPS_C_N_O_pct,SI TableS1 C+N+O合计96.68%，偏离100%。,保留原值、标conflict，默认不作回归标签；不归一化为100%。,F09,Table S1
+Q006,A01,A01-S05,XPS_C_N_O_pct,SI TableS1 C+N+O合计96.62%，偏离100%。,保留原值、标conflict，默认不作回归标签；不归一化为100%。,F09,Table S1
+Q007,A01,A01-S04,bacterial_inhibition_pct,同15min语境下浓度筛选报告S.aureus99.57%，时间曲线正文报告0存活。,分试验记录，先不合并平均；训练时择一致协议。,F05/F09,p7 §3.3; Fig5; FigS5
+Q008,A01,A01-all,additive_loading_pct,EDA仅给2/4/6/8wt%，未定义按水、溶液还是木质素作分母。,保留原始百分数和unknown denominator；不换算g或g/g。,F05,p3 §2.2
+Q009,A03,A03-S01,bioimaging_dose,讨论称与L929试验相同浓度，方法里成像为500ug/mL而细胞毒性50ug/mL。,生物相容性仅绑定50ug/mL、24h；不外推到500ug/mL。,F06,p14 discussion; p18 methods
+Q010,A03,A03-S01,zone_of_inhibition_mm,使用6mm纸片；阳性对照K.pneumoniae的ZOI4.42/2.50mm小于纸片，是否包含纸片直径定义不清。,不定义为含纸片总径或净径，保留ZOI原值与纸片尺寸；跨论文建模前确认定义。,F06,p10 Table1; p17 methods
+Q011,A04,A04-S01,dose_ug_mL / initial_CFU_mL,方法剂量5/10/20ug/mL，结果为5mg/mL；初始菌量写1x10^-6CFU/mL。,不改为猜测值；剂量/菌量标准列留空，抗菌数值默认排除回归。,F07,p4 §2.9; p10 §3.5
+Q012,A08,A08-all,contact_min,方法每10min取样，结果用15/45min；结论提E.coli30min达100%，正文明确45min。,保留正文明确样品对应的15/45min；结论30min不分配到特定配方。,F14,p4 methods;p8-9 results/conclusions
+Q013,A08,A08-S01,freeze_dry_pressure,冻干压力原文20MPa，明显不符合常规真空冻干表述。,只保留原文注释，不把20MPa当作可执行实验参数。,F14,p2 §2.2

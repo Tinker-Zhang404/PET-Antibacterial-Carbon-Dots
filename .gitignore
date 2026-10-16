@@ -1,0 +1,26 @@
+# Local environments and editor settings
+.idea/
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Intermediate extraction, preview and verification files
+/tmp/
+*.inspect.ndjson
+*.log
+*.tmp
+Thumbs.db
+.DS_Store
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Original archive duplicates the extracted source folder
+/文献-木质素基抗菌碳点.zip

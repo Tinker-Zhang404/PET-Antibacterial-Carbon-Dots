@@ -1,0 +1,52 @@
+﻿secondary_id,source_file_id,source_locator,original_reference,precursor,additive,conditions_raw,PLQY_pct,diameter_raw_nm,emission_raw_nm,ratio_raw,yield_raw_pct,source_level,include_primary_training,notes
+R001,F19,p8 Table3,[16],alkali lignin,N,Table3 does not provide synthesis temperature/time,9.2,,,1.0/7.6,86,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R002,F19,p8 Table3,[32],softwood alkali lignin,"N,S",Table3 does not provide synthesis temperature/time,30.5,,,1.0/1.0,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R003,F19,p8 Table3,[36],sodium lignosulfonate,S,Table3 does not provide synthesis temperature/time,,,,,29.5,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R004,F19,p8 Table3,[37],grass EHL,N,Table3 does not provide synthesis temperature/time,43.9,,,1.0/24/21,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R005,F19,p8 Table3,[38],hardwood DES lignin,N,Table3 does not provide synthesis temperature/time,22,,,1.0/3.0,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R006,F19,p8 Table3,[39],lignin,,Table3 does not provide synthesis temperature/time,,,,,2.3,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R007,F19,p8 Table3,[44],hardwood alkali lignin,N,Table3 does not provide synthesis temperature/time,43,,,1/22/70,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R008,F19,p8 Table3,[45],alkali lignin,N,Table3 does not provide synthesis temperature/time,17.6,,,1.0/5.4,82.4,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R009,F19,p8 Table3,[57],hardwood alkali lignin,"N,S",Table3 does not provide synthesis temperature/time,20.6,,,1.0/1.0,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R010,F19,p8 Table3,[97],corncob bioethanol residue lignin,N,Table3 does not provide synthesis temperature/time,42.7,,,,68,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R011,F19,p8 Table3,[97],softwood alkali lignin,"N,S",Table3 does not provide synthesis temperature/time,,,,1.0/1.0,15.2-30.6,secondary_review,0,QY原表范围5.2-23.7%（本行点值留空）。
+R012,F19,p8 Table3,[110],grass EHL,"N,S",Table3 does not provide synthesis temperature/time,45,,,,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R013,F19,p8 Table3,[111],grass ethanol-water lignin,"N,Mg",Table3 does not provide synthesis temperature/time,46.4,,,1.0/0.4/0.2,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R014,F19,p8 Table3,[93],hardwood alkali lignin,"N,S",Table3 does not provide synthesis temperature/time,21,,,1.0/1.0,18,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R015,F19,p8 Table3,[145],softwood alkali lignin,,Table3 does not provide synthesis temperature/time,13,,,,6.0-7.0,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R016,F19,p8 Table3,[146],sodium lignosulfonate,S,Table3 does not provide synthesis temperature/time,47.3,,,1.5/1.0,5.0,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R017,F19,p8 Table3,[157],sodium lignosulfonate,"K,Cl",Table3 does not provide synthesis temperature/time,15,,,1.0/1.0,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R018,F19,p8 Table3,[79],grass alkali lignin,,Table3 does not provide synthesis temperature/time,,,,,18,secondary_review,0,QY原表8.0-9.0%（本行点值留空）。
+R019,F19,p8 Table3,[81],softwood alkali lignin,,Table3 does not provide synthesis temperature/time,21,,,,21,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R020,F19,p8 Table3,[99],softwood alkali lignin,N,Table3 does not provide synthesis temperature/time,22.2,,,1.0/2.5,39.28,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R021,F19,p8 Table3,[104],coconut husk lignin,N,Table3 does not provide synthesis temperature/time,6,,,1.0/330,40,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R022,F19,p8 Table3,[115],softwood alkali lignin,"N,S",Table3 does not provide synthesis temperature/time,23.7,,,1.0/1.0,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R023,F19,p8 Table3,[85],softwood alkali lignin,N,Table3 does not provide synthesis temperature/time,28,,,,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R024,F19,p8 Table3,[121],softwood alkali lignin,MCC,Table3 does not provide synthesis temperature/time,23.4,,,1.0/1.0,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R025,F19,p8 Table3,[89],sodium lignosulfonate,"N,S,Mn",Table3 does not provide synthesis temperature/time,31.6,,,1.0/0.01,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R026,F19,p8 Table3,[122],softwood alkali lignin,N,Table3 does not provide synthesis temperature/time,33.2,,,1.0/6.7/10,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R027,F19,p8 Table3,[158],softwood alkali lignin,N,Table3 does not provide synthesis temperature/time,37.3,,,1.0/3.0,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R028,F19,p8 Table3,[92],softwood alkali lignin,N,Table3 does not provide synthesis temperature/time,41.5,,,1.0/3.0,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R029,F19,p8 Table3,[83],hardwood hydrolyzed lignin,N,Table3 does not provide synthesis temperature/time,42.7,,,1.0/10.8,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R030,F19,p8 Table3,[148],softwood alkali lignin,"Cd,S",Table3 does not provide synthesis temperature/time,66,,,1.0/1.0/0.55/0.1,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R031,F20,p4 Table1,[44],lignin,ammonia,Table1 does not provide synthesis temperature/time,8.2,,452,,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R032,F20,p4 Table1,[28],lignin,ethylenediamine,Table1 does not provide synthesis temperature/time,17.6,,525,,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R033,F20,p4 Table1,[39],lignin,betaine,Table1 does not provide synthesis temperature/time,7.9,,400,,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R034,F20,p4 Table1,[47],lignin,sulfuric acid,Table1 does not provide synthesis temperature/time,13.5,,410,,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R035,F20,p4 Table1,[24],lignin,nitric acid,Table1 does not provide synthesis temperature/time,23,,420,,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R036,F20,p4 Table1,[49],lignin,"2,4-diaminobenzenesulfonic acid",Table1 does not provide synthesis temperature/time,30.5,,530,,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R037,F20,p4 Table1,[19],lignin,3-aminophenylboronic acid,Table1 does not provide synthesis temperature/time,,,514,,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R038,F18,p9 Table3,[90],alkali lignin fraction AL,,fractionation;hydrothermal180C8h;precursorMw=3864g/mol;PDI=6.9,1.31,2.2-2.6 group range,500,,,secondary_review,0,原始文献B02未在本地提供；数据为综述转述。
+R039,F18,p9 Table3,[90],alkali lignin fraction F1,,fractionation;hydrothermal180C8h;precursorMw=7154g/mol;PDI=2.8,2.26,2.2-2.6 group range,500,,,secondary_review,0,原始文献B02未在本地提供；数据为综述转述。
+R040,F18,p9 Table3,[90],alkali lignin fraction F3,,fractionation;hydrothermal180C8h;precursorMw=5042g/mol;PDI=2.1,3.86,2.2-2.6 group range,500,,,secondary_review,0,原始文献B02未在本地提供；数据为综述转述。
+R041,F18,p9 Table3,[90],alkali lignin fraction F5,,fractionation;hydrothermal180C8h;precursorMw=2096g/mol;PDI=2.1,1.04,2.2-2.6 group range,500,,,secondary_review,0,原始文献B02未在本地提供；数据为综述转述。
+R042,F18,p9 Table3,[94],alkali lignin,o-ABSA+NaOH,acidolysis then hydrothermal200C12h,21,2.2,484,,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R043,F18,p9 Table3,[96],alkali lignin,3-aminophenylboronic acid,acidolysis then hydrothermal200C12h,,3.82,346/428/514,,,secondary_review,0,原文未核查；[96]QY原表5-7%。
+R044,F18,p9 Table3,[97],alkali lignin,o-ABSA,acidolysis then hydrothermal200C16h,23.68,4.8,476,,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R045,F18,p9 Table3,[98],alkali lignin,4-aminobenzoic acid,acidolysis then hydrothermal200C12h,10.8,2.88,344,,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R046,F18,p9 Table3,[98],alkali lignin,p-ABSA,acidolysis then hydrothermal200C12h,7.3,4.01,360,,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R047,F18,p9 Table3,[98],alkali lignin,benzenesulfonic acid,acidolysis then hydrothermal200C12h,23.6,4.56,470,,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R048,F18,p9 Table3,[98],alkali lignin,"2,4-diaminobenzenesulfonic acid",acidolysis then hydrothermal200C12h,30.5,5.05,530,,,secondary_review,0,需追溯原始论文；不同综述/本地全文可能重复，不计独立样本。
+R049,F18,p15 Table5,[129],Kraft lignin,H2SO4/HNO3,pyrolytic carbon then acid oxidation90C8h,8.1,2.4,560,0.1g/20mL acid,,secondary_review,0,p15 Table5；原始B05全文缺失，保留二次数据；不可将酸氧化时间当水热时间。
+R050,F18,p15 Table5,[129],Kraft lignin,H2SO4/HNO3,pyrolytic carbon then acid oxidation90C16h,11.6,2.4,560,0.1g/20mL acid,,secondary_review,0,p15 Table5；原始B05全文缺失，保留二次数据；不可将酸氧化时间当水热时间。
+R051,F18,p15 Table5,[129],Kraft lignin,H2SO4/HNO3,pyrolytic carbon then acid oxidation90C24h,13,2.4,560,0.1g/20mL acid,,secondary_review,0,p15 Table5；原始B05全文缺失，保留二次数据；不可将酸氧化时间当水热时间。

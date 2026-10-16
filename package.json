@@ -1,0 +1,11 @@
+{
+  "name": "pet-antibacterial-carbon-dots-literature",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "extract": "python scripts/extract_sources.py",
+    "data:build": "python scripts/build_database.py",
+    "workbook:build": "node scripts/build_workbook.mjs",
+    "verify": "python scripts/verify_database.py"
+  }
+}

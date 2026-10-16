@@ -1,0 +1,11 @@
+﻿study_id,entity_id,source_file_id,source_locator,data_to_extract,available_conditions,handling
+A01,A01-S01 to A01-S05,F09,FigS2,五组Zeta电位,样品名称明确；仅图示,尚未数字化柱高；无明确文字值不填zeta_mV。
+A01,A01-S01 to A01-S05,F05,p8 Fig5A-B,各CD的逐时间存活率,S.aureus暗/5/10/15min；E.coli暗/5/10/15/20min,除正文明确零存活外，各柱高度未数字化；不估读填百分数。
+A01,A01-S01 to A01-S05,F09,FigS5,逐剂量、逐样品抗菌数据,光照15min与无光对照；浓度0-30ug/mL,"只提取正文明确N,L-CQDs3的30ug/mL端点；其余图柱待数字化。"
+A01,A01-F01,F09,FigS8-S9,水凝胶逐CD加入量/储存期抑菌径向距离,0-50mg范围，明确提及5/30/40/50mg；储存5/10/15days,最佳30mg保留；未逐点读取距离，不能当作ZOI直径。
+A02,A02-S01 to A02-S04,F08,FigS10-S12,TA/CA与OA比较的POD/CAT曲线,有机酸类型确定；POD/CAT不同底物与反应时间,只有明确标数的表格常数提入性能测量，其余曲线不估值。
+A02,A02-S02,F04/F08,Fig5; FigS17,LCDs-OA逐剂量/时间抗菌存活率,0/20/30/40/50ug/mL；4h；存在H2O2,保留正文40ug/mL数值与50ug/mL无菌落观察；其他图点待提取。
+A02,A02-F01,F08,FigS18,LCDs-OA@CaO2逐剂量抗菌,0/50/75/100ug/mL；无外加H2O2,保留正文75ug/mL端点；其余图点待数字化。
+A04,A04-S01,F07,p10 Fig5,CD/Hg复合的剂量-菌落结果,方法和结果剂量单位冲突,先核查单位，不能通过读图消除原文浓度冲突。
+A05,A05-F01 to A05-F06,F15,Fig5-Fig8,CD300等缺失文字数值、预UV老化与废水条件曲线,暗/3500K日光/365nmUV；3h；预UV3/6/9/15/24h,正文明确数值已提取，其余图点与B.subtilis零检出待核查，不自动填100%。
+A08,A08-F01 to A08-F04,F14,p8 Fig6,PVA系列完整时间-存活率曲线,正文明确15/45min已记录；方法取样间隔与图/结论冲突,其余图点未估读；逐时间定义需核对。

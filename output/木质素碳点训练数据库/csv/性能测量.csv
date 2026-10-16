@@ -1,0 +1,251 @@
+﻿measurement_id,entity_id,study_id,endpoint,value,relation,value_low,value_high,uncertainty,uncertainty_type,unit,value_raw,method,organism,strain,gram,dose_ug_mL,dose_basis,disk_mass_ug,disk_diameter_mm,material_mass_g,assay_volume_mL,initial_CFU_mL,initial_OD600,contact_min,incubation_h,temperature_C,medium,pH,light,wavelength_nm,wavelength_relation,irradiance_mW_cm2,lamp_power_W,H2O2_mM,cofactor,control,n,material_context,data_status,regression_eligible,evidence_text,source_file_id,source_locator,notes
+M0001,B03-S01,B03,diameter_TEM_nm,4.5,=,,,,,nm,,TEM,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p4 §3.2,
+M0002,B03-S01,B03,PLQY_pct,19.5,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p6 Table 3,
+M0003,B03-S01,B03,mass_yield_pct,16.5,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p6 Table 3; p2 Eq1,产率分母为原始AL投料质量。
+M0004,B03-S01,B03,PL_lifetime_ns,5.34,=,,,,,ns,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p6 Table 2,
+M0005,B03-S01,B03,Raman_IG_ID,1.16,=,,,,,ratio,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p6 §3.3,
+M0006,B03-S01,B03,XPS_C_pct,63.14,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p7 Table 4,
+M0007,B03-S01,B03,XPS_O_pct,33.55,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p7 Table 4,
+M0008,B03-S01,B03,XPS_N_pct,3.31,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p7 Table 4,
+M0009,B03-S01,B03,lattice_spacing_nm,0.32,=,,,,,nm,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p4 §3.2,
+M0010,B03-S01,B03,emission_peak_nm,475,=,,,,,nm,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p5 §3.2,
+M0011,B03-S02,B03,diameter_TEM_nm,4.3,=,,,,,nm,,TEM,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p4 §3.2,
+M0012,B03-S02,B03,PLQY_pct,18,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p6 Table 3,
+M0013,B03-S02,B03,mass_yield_pct,9.1,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p6 Table 3; p2 Eq1,产率分母为原始AL投料质量。
+M0014,B03-S02,B03,PL_lifetime_ns,5.19,=,,,,,ns,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p6 Table 2,
+M0015,B03-S02,B03,Raman_IG_ID,1.17,=,,,,,ratio,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p6 §3.3,
+M0016,B03-S02,B03,XPS_C_pct,61.71,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p7 Table 4,
+M0017,B03-S02,B03,XPS_O_pct,35.23,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p7 Table 4,
+M0018,B03-S02,B03,XPS_N_pct,3.06,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p7 Table 4,
+M0019,B03-S02,B03,lattice_spacing_nm,0.32,=,,,,,nm,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p4 §3.2,
+M0020,B03-S02,B03,emission_peak_nm,475,=,,,,,nm,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p5 §3.2,
+M0021,B03-S03,B03,diameter_TEM_nm,4.1,=,,,,,nm,,TEM,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p4 §3.2,
+M0022,B03-S03,B03,PLQY_pct,17.8,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p6 Table 3,
+M0023,B03-S03,B03,mass_yield_pct,4,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p6 Table 3; p2 Eq1,产率分母为原始AL投料质量。
+M0024,B03-S03,B03,PL_lifetime_ns,5.09,=,,,,,ns,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p6 Table 2,
+M0025,B03-S03,B03,Raman_IG_ID,1.14,=,,,,,ratio,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p6 §3.3,
+M0026,B03-S03,B03,XPS_C_pct,59.32,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p7 Table 4,
+M0027,B03-S03,B03,XPS_O_pct,37.89,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p7 Table 4,
+M0028,B03-S03,B03,XPS_N_pct,2.79,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p7 Table 4,
+M0029,B03-S03,B03,lattice_spacing_nm,0.32,=,,,,,nm,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p4 §3.2,
+M0030,B03-S03,B03,emission_peak_nm,475,=,,,,,nm,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p5 §3.2,
+M0031,B03-S04,B03,diameter_TEM_nm,4.9,=,,,,,nm,,TEM,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p4 §3.2,
+M0032,B03-S04,B03,PLQY_pct,0.9,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p6 Table 3,
+M0033,B03-S04,B03,mass_yield_pct,0.4,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p6 Table 3; p2 Eq1,产率分母为原始AL投料质量。
+M0034,B03-S04,B03,PL_lifetime_ns,3.33,=,,,,,ns,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p6 Table 2,
+M0035,B03-S04,B03,Raman_IG_ID,0.98,=,,,,,ratio,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p6 §3.3,
+M0036,B03-S04,B03,XPS_C_pct,70.14,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p7 Table 4,
+M0037,B03-S04,B03,XPS_O_pct,29.68,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p7 Table 4,
+M0038,B03-S04,B03,XPS_N_pct,0.18,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p7 Table 4,
+M0039,B03-S04,B03,lattice_spacing_nm,0.32,=,,,,,nm,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p4 §3.2,
+M0040,B03-S04,B03,emission_peak_nm,400,=,,,,,nm,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p5 §3.2,
+M0041,B03-S05,B03,diameter_TEM_nm,5.1,=,,,,,nm,,TEM,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p4 §3.2,
+M0042,B03-S05,B03,PLQY_pct,3.8,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p6 Table 3,
+M0043,B03-S05,B03,mass_yield_pct,1.4,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p6 Table 3; p2 Eq1,产率分母为原始AL投料质量。
+M0044,B03-S05,B03,PL_lifetime_ns,3.26,=,,,,,ns,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p6 Table 2,
+M0045,B03-S05,B03,Raman_IG_ID,1.02,=,,,,,ratio,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p6 §3.3,
+M0046,B03-S05,B03,XPS_C_pct,69.78,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p7 Table 4,
+M0047,B03-S05,B03,XPS_O_pct,30.11,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p7 Table 4,
+M0048,B03-S05,B03,XPS_N_pct,0.11,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p7 Table 4,
+M0049,B03-S05,B03,lattice_spacing_nm,0.32,=,,,,,nm,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p4 §3.2,
+M0050,B03-S05,B03,emission_peak_nm,400,=,,,,,nm,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F01,p5 §3.2,
+M0051,B03-AL,B03,precursor_Mw_g_mol,5501,=,,,,,g/mol,,GPC,,,,,,,,,,,,,,,,,,,,,,,,,,precursor,reported,1,,F01,p4 §3.1.1,
+M0052,B03-AL,B03,precursor_Mn_g_mol,2041,=,,,,,g/mol,,GPC,,,,,,,,,,,,,,,,,,,,,,,,,,precursor,reported,1,,F01,p4 §3.1.1,
+M0053,B03-AL,B03,precursor_PDI,2.7,=,,,,,ratio,,GPC,,,,,,,,,,,,,,,,,,,,,,,,,,precursor,reported,1,,F01,p4 §3.1.1,
+M0054,B03-S04,B03,precursor_Mw_g_mol,2835,=,,,,,g/mol,,GPC,,,,,,,,,,,,,,,,,,,,,,,,,,precursor,reported,1,,F01,p4 §3.1.1 C4 precursor,
+M0055,B03-S04,B03,precursor_Mn_g_mol,1614,=,,,,,g/mol,,GPC,,,,,,,,,,,,,,,,,,,,,,,,,,precursor,reported,1,,F01,p4 §3.1.1 C4 precursor,
+M0056,B03-S04,B03,precursor_PDI,1.75,=,,,,,ratio,,GPC,,,,,,,,,,,,,,,,,,,,,,,,,,precursor,reported,1,,F01,p4 §3.1.1 C4 precursor,
+M0057,B03-S05,B03,precursor_Mw_g_mol,3327,=,,,,,g/mol,,GPC,,,,,,,,,,,,,,,,,,,,,,,,,,precursor,reported,1,,F01,p4 §3.1.1 C5 precursor,
+M0058,B03-S05,B03,precursor_Mn_g_mol,1823,=,,,,,g/mol,,GPC,,,,,,,,,,,,,,,,,,,,,,,,,,precursor,reported,1,,F01,p4 §3.1.1 C5 precursor,
+M0059,B03-S05,B03,precursor_PDI,1.83,=,,,,,ratio,,GPC,,,,,,,,,,,,,,,,,,,,,,,,,,precursor,reported,1,,F01,p4 §3.1.1 C5 precursor,
+M0060,A02-S02,A02,diameter_TEM_nm,3.9,=,,,0.4,not_specified,nm,,TEM,,,,,,,,,,,,,,,,,,,,,,,,,100,free_CD,reported,1,,F04,p3 §3.1,
+M0061,A02-S02,A02,height_AFM_nm,5.1,=,,,1.8,not_specified,nm,,AFM,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F04,p3 §3.1,
+M0062,A02-S02,A02,lattice_spacing_nm,0.22,=,,,,,nm,,HRTEM,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F04,p3 §3.1,
+M0063,A02-S01,A02,POD_Km_TMB_mM,1.55,=,,,,,mM,1.55,Michaelis-Menten fit,,,,,,,,,,,,,,,,4.5,,,,,,,,,,free_CD,reported,1,,F08,Supplementary Table2,
+M0064,A02-S01,A02,POD_Vmax_TMB_M_s,3.1600000000000005e-08,=,,,,,M/s,3.16 (10^-8 M/s),Michaelis-Menten fit,,,,,,,,,,,,,,,,4.5,,,,,,,,,,free_CD,unit_converted,1,,F08,Supplementary Table2,
+M0065,A02-S01,A02,POD_Km_H2O2_mM,7.81,=,,,,,mM,7.81,Michaelis-Menten fit,,,,,,,,,,,,,,,,4.5,,,,,,,,,,free_CD,reported,1,,F08,Supplementary Table2,
+M0066,A02-S01,A02,POD_Vmax_H2O2_M_s,4.7800000000000005e-08,=,,,,,M/s,4.78 (10^-8 M/s),Michaelis-Menten fit,,,,,,,,,,,,,,,,4.5,,,,,,,,,,free_CD,unit_converted,1,,F08,Supplementary Table2,
+M0067,A02-S01,A02,CAT_Km_H2O2_mM,11.2,=,,,,,mM,11.2,Michaelis-Menten fit,,,,,,,,,,,,,,,,7.4,,,,,,,,,,free_CD,reported,1,,F08,Supplementary Table3,
+M0068,A02-S01,A02,CAT_Vmax_O2_mg_L_min,1.01,=,,,,,mg/L/min,1.01,Michaelis-Menten fit,,,,,,,,,,,,,,,,7.4,,,,,,,,,,free_CD,reported,1,,F08,Supplementary Table3,
+M0069,A02-S01,A02,Raman_carbonyl_area_pct,0.9,=,,,,,%,,Raman peak fit,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F08,Supplementary Table1,
+M0070,A02-S02,A02,POD_Km_TMB_mM,0.16,=,,,,,mM,0.16,Michaelis-Menten fit,,,,,,,,,,,,,,,,4.5,,,,,,,,,,free_CD,reported,1,,F08,Supplementary Table2,
+M0071,A02-S02,A02,POD_Vmax_TMB_M_s,1.092e-07,=,,,,,M/s,10.92 (10^-8 M/s),Michaelis-Menten fit,,,,,,,,,,,,,,,,4.5,,,,,,,,,,free_CD,unit_converted,1,,F08,Supplementary Table2,
+M0072,A02-S02,A02,POD_Km_H2O2_mM,0.49,=,,,,,mM,0.49,Michaelis-Menten fit,,,,,,,,,,,,,,,,4.5,,,,,,,,,,free_CD,reported,1,,F08,Supplementary Table2,
+M0073,A02-S02,A02,POD_Vmax_H2O2_M_s,1.503e-07,=,,,,,M/s,15.03 (10^-8 M/s),Michaelis-Menten fit,,,,,,,,,,,,,,,,4.5,,,,,,,,,,free_CD,unit_converted,1,,F08,Supplementary Table2,
+M0074,A02-S02,A02,CAT_Km_H2O2_mM,0.59,=,,,,,mM,0.59,Michaelis-Menten fit,,,,,,,,,,,,,,,,7.4,,,,,,,,,,free_CD,reported,1,,F08,Supplementary Table3,
+M0075,A02-S02,A02,CAT_Vmax_O2_mg_L_min,2.79,=,,,,,mg/L/min,2.79,Michaelis-Menten fit,,,,,,,,,,,,,,,,7.4,,,,,,,,,,free_CD,reported,1,,F08,Supplementary Table3,
+M0076,A02-S02,A02,Raman_carbonyl_area_pct,4.3,=,,,,,%,,Raman peak fit,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F08,Supplementary Table1,
+M0077,A02-S02,A02,bacterial_survival_pct,2.6,=,,,0.1,not_specified,%,,UV-vis bacterial survival,Escherichia coli,MDR (strain attribution unresolved),negative,40,LCDs-OA,,,,,,0.1,240,,37,0.1M acetate buffer; subsequent LB,4.5,,,,,,,H2O2 present; antibacterial concentration not stated,acetate buffer,,free_CD_with_H2O2,reported,1,,F04,p9 §3.5; F08 P34,不可把酶活测试0.5mM H2O2浓度转移到抗菌试验；MDR与SI购买菌株编号不一致。
+M0078,A02-S02,A02,bacterial_colony_observation,,=,,,,,,,agar colony count observation,Escherichia coli,,,50,,,,,,,,240,,,,,,,,,,,H2O2,,,free_CD_with_H2O2,qualitative,0,colonies on LB agar plates vanished entirely,F04,p8 §3.5 Fig5,无菌落是检出限内观察，不换算100%或MIC。
+M0079,A02-S02,A02,bacterial_survival_pct,1.3,=,,,0.2,not_specified,%,,UV-vis bacterial survival,Staphylococcus aureus,MDR (strain attribution unresolved),positive,40,LCDs-OA,,,,,,0.1,240,,37,0.1M acetate buffer; subsequent LB,4.5,,,,,,,H2O2 present; antibacterial concentration not stated,acetate buffer,,free_CD_with_H2O2,reported,1,,F04,p9 §3.5; F08 P34,不可把酶活测试0.5mM H2O2浓度转移到抗菌试验；MDR与SI购买菌株编号不一致。
+M0080,A02-S02,A02,bacterial_colony_observation,,=,,,,,,,agar colony count observation,Staphylococcus aureus,,,50,,,,,,,,240,,,,,,,,,,,H2O2,,,free_CD_with_H2O2,qualitative,0,colonies on LB agar plates vanished entirely,F04,p8 §3.5 Fig5,无菌落是检出限内观察，不换算100%或MIC。
+M0081,A02-F01,A02,bacterial_survival_pct,2.1,=,,,0.2,not_specified,%,,UV-vis bacterial survival,Escherichia coli,MDR (strain attribution unresolved),negative,75,LCDs-OA@CaO2 composite total,,,,,,0.1,240,,37,0.1M acetate buffer,4.5,,,,,,0,CaO2 supplies peroxide,,,CD_CaO2_composite,reported,1,,F04,p9 §3.5; F08 P34,
+M0082,A02-F01,A02,bacterial_survival_pct,1.8,=,,,0.4,not_specified,%,,UV-vis bacterial survival,Staphylococcus aureus,MDR (strain attribution unresolved),positive,75,LCDs-OA@CaO2 composite total,,,,,,0.1,240,,37,0.1M acetate buffer,4.5,,,,,,0,CaO2 supplies peroxide,,,CD_CaO2_composite,reported,1,,F04,p9 §3.5; F08 P34,
+M0083,A01-S01,A01,PLQY_pct,10.5,=,,,,,%,,quinine sulfate reference,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F05,p6 §3.1 Fig3C,
+M0084,A01-S01,A01,singlet_oxygen_QY_pct,22.04,=,,,,,%,,ABDA; RB reference Phi=0.75,,,,,,,,,,,,,,,,,xenon,,,100,,,,,,free_CD,reported,1,,F05,p6 §3.2,
+M0085,A01-S01,A01,PL_lifetime_ns,4.01,=,,,,,ns,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F09,Table S2,
+M0086,A01-S01,A01,emission_peak_nm,450,=,,,,,nm,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F05,p6 §3.1,
+M0087,A01-S01,A01,diameter_TEM_nm,1.6,=,,,0.58,not_specified,nm,,TEM,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported_figure_label,1,,F05,p5 Fig1A inset (numeric labels visually verified),
+M0088,A01-S01,A01,lattice_spacing_nm,0.41,=,,,,,nm,,HRTEM,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F05,p4 §3.1; p5 Fig1B,
+M0089,A01-S02,A01,PLQY_pct,12.2,=,,,,,%,,quinine sulfate reference,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F05,p6 §3.1 Fig3C,
+M0090,A01-S02,A01,singlet_oxygen_QY_pct,45.38,=,,,,,%,,ABDA; RB reference Phi=0.75,,,,,,,,,,,,,,,,,xenon,,,100,,,,,,free_CD,reported,1,,F05,p6 §3.2,
+M0091,A01-S02,A01,PL_lifetime_ns,4.42,=,,,,,ns,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F09,Table S2,
+M0092,A01-S02,A01,diameter_TEM_nm,1.98,=,,,0.59,not_specified,nm,,TEM,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported_figure_label,1,,F05,p5 Fig1A inset (numeric labels visually verified),
+M0093,A01-S02,A01,lattice_spacing_nm,0.38,=,,,,,nm,,HRTEM,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F05,p4 §3.1; p5 Fig1B,
+M0094,A01-S03,A01,PLQY_pct,18.1,=,,,,,%,,quinine sulfate reference,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F05,p6 §3.1 Fig3C,
+M0095,A01-S03,A01,singlet_oxygen_QY_pct,61.56,=,,,,,%,,ABDA; RB reference Phi=0.75,,,,,,,,,,,,,,,,,xenon,,,100,,,,,,free_CD,reported,1,,F05,p6 §3.2,
+M0096,A01-S03,A01,PL_lifetime_ns,5.4,=,,,,,ns,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F09,Table S2,
+M0097,A01-S03,A01,diameter_TEM_nm,1.98,=,,,0.69,not_specified,nm,,TEM,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported_figure_label,1,,F05,p5 Fig1A inset (numeric labels visually verified),
+M0098,A01-S04,A01,PLQY_pct,29.8,=,,,,,%,,quinine sulfate reference,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F05,p6 §3.1 Fig3C,
+M0099,A01-S04,A01,singlet_oxygen_QY_pct,82.61,=,,,,,%,,ABDA; RB reference Phi=0.75,,,,,,,,,,,,,,,,,xenon,,,100,,,,,,free_CD,reported,1,,F05,p6 §3.2,
+M0100,A01-S04,A01,PL_lifetime_ns,5.55,=,,,,,ns,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F09,Table S2,
+M0101,A01-S04,A01,diameter_TEM_nm,1.99,=,,,0.58,not_specified,nm,,TEM,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported_figure_label,1,,F05,p5 Fig1A inset (numeric labels visually verified),
+M0102,A01-S05,A01,PLQY_pct,22.1,=,,,,,%,,quinine sulfate reference,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F05,p6 §3.1 Fig3C,
+M0103,A01-S05,A01,singlet_oxygen_QY_pct,45.06,=,,,,,%,,ABDA; RB reference Phi=0.75,,,,,,,,,,,,,,,,,xenon,,,100,,,,,,free_CD,reported,1,,F05,p6 §3.2,
+M0104,A01-S05,A01,PL_lifetime_ns,5.18,=,,,,,ns,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F09,Table S2,
+M0105,A01-S05,A01,diameter_TEM_nm,1.99,=,,,0.73,not_specified,nm,,TEM,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported_figure_label,1,,F05,p5 Fig1A inset (numeric labels visually verified),
+M0106,A01-S01,A01,XPS_C_pct,76.61,=,,,,,%,,XPS,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F09,Table S1,
+M0107,A01-S01,A01,XPS_N_pct,0,=,,,,,%,,XPS,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F09,Table S1,
+M0108,A01-S01,A01,XPS_O_pct,23.39,=,,,,,%,,XPS,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F09,Table S1,
+M0109,A01-S02,A01,XPS_C_pct,74.25,=,,,,,%,,XPS,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F09,Table S1,
+M0110,A01-S02,A01,XPS_N_pct,4.88,=,,,,,%,,XPS,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F09,Table S1,
+M0111,A01-S02,A01,XPS_O_pct,20.87,=,,,,,%,,XPS,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F09,Table S1,
+M0112,A01-S03,A01,XPS_C_pct,72.22,=,,,,,%,,XPS,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,conflict,0,,F09,Table S1,C+N+O=99.67%; inconsistent total retained
+M0113,A01-S03,A01,XPS_N_pct,7.61,=,,,,,%,,XPS,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,conflict,0,,F09,Table S1,C+N+O=99.67%; inconsistent total retained
+M0114,A01-S03,A01,XPS_O_pct,19.84,=,,,,,%,,XPS,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,conflict,0,,F09,Table S1,C+N+O=99.67%; inconsistent total retained
+M0115,A01-S04,A01,XPS_C_pct,64.07,=,,,,,%,,XPS,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,conflict,0,,F09,Table S1,C+N+O=96.68%; inconsistent total retained
+M0116,A01-S04,A01,XPS_N_pct,8.94,=,,,,,%,,XPS,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,conflict,0,,F09,Table S1,C+N+O=96.68%; inconsistent total retained
+M0117,A01-S04,A01,XPS_O_pct,23.67,=,,,,,%,,XPS,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,conflict,0,,F09,Table S1,C+N+O=96.68%; inconsistent total retained
+M0118,A01-S05,A01,XPS_C_pct,64.0,=,,,,,%,,XPS,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,conflict,0,,F09,Table S1,C+N+O=96.62%; inconsistent total retained
+M0119,A01-S05,A01,XPS_N_pct,8.98,=,,,,,%,,XPS,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,conflict,0,,F09,Table S1,C+N+O=96.62%; inconsistent total retained
+M0120,A01-S05,A01,XPS_O_pct,23.64,=,,,,,%,,XPS,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,conflict,0,,F09,Table S1,C+N+O=96.62%; inconsistent total retained
+M0121,A01-S04,A01,bacterial_inhibition_pct,99.57,=,,,,,%,,plate colony count,Staphylococcus aureus,,positive,30,CD,,,,,,,15,24,,,,xenon,,,100,,,,,,free_CD,reported,1,optimized concentration30ug/mL inhibition99.57% S.aureus and93.60% E.coli,F05,p7 §3.3; F09 FigS5,FigS5与Fig5时间实验存在数值差异，作为不同试验保留。
+M0122,A01-S04,A01,bacterial_inhibition_pct,93.6,=,,,,,%,,plate colony count,Escherichia coli,,negative,30,CD,,,,,,,15,24,,,,xenon,,,100,,,,,,free_CD,reported,1,optimized concentration30ug/mL inhibition99.57% S.aureus and93.60% E.coli,F05,p7 §3.3; F09 FigS5,FigS5与Fig5时间实验存在数值差异，作为不同试验保留。
+M0123,A01-S04,A01,bacterial_survival_pct,0,reported_zero,,,,,%,,plate colony count,Staphylococcus aureus,,positive,30,CD,,,,,,,15,24,,,,xenon,,,100,,,,,,free_CD,reported,0,survival rate decreases to0; complete inhibition,F05,p7 §3.3; p8 Fig5A-B,检出限未给；零存活不等于无限log杀菌率；剂量来自优化实验语境。
+M0124,A01-S04,A01,bacterial_survival_pct,0,reported_zero,,,,,%,,plate colony count,Escherichia coli,,negative,30,CD,,,,,,,20,24,,,,xenon,,,100,,,,,,free_CD,reported,0,survival rate decreases to0; complete inhibition,F05,p7 §3.3; p8 Fig5A-B,检出限未给；零存活不等于无限log杀菌率；剂量来自优化实验语境。
+M0125,A03-S01,A03,PLQY_pct,5.33,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F06,p11 §2.3,
+M0126,A03-S01,A03,PL_lifetime_ns,4.51,=,,,,,ns,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F06,p11 §2.3,
+M0127,A03-S01,A03,emission_peak_nm,490,=,,,,,nm,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F06,p11 §2.3,
+M0128,A03-S01,A03,absorption_peak_nm,288,=,,,,,nm,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F06,p1 abstract,
+M0129,A03-S01,A03,diameter_TEM_nm,,range,3,5,,,nm,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported_range,0,,F06,p12 Table2,
+M0130,A03-S01,A03,zone_of_inhibition_mm,21.77,=,,,0.57,SD,mm,,disk diffusion,Staphylococcus aureus,,positive,,,50,6,,,150000000.0,,,24,37,Mueller-Hinton agar,,,,,,,,,solvent negative; erythromycin15ug positive,3,free_CD,reported,1,,F06,p10 Table1; p17 methods,原文ZOI未明确是否包含纸片直径，保留原值且不扣6mm；对照部分ZOI小于纸片直径，定义需核查。
+M0131,A03-S01,A03,zone_of_inhibition_mm,29.23,=,,,0.54,SD,mm,,disk diffusion,Staphylococcus aureus,,positive,,,50,6,,,150000000.0,,,72,37,Mueller-Hinton agar,,,,,,,,,solvent negative; erythromycin15ug positive,3,free_CD,reported,1,,F06,p10 Table1; p17 methods,原文ZOI未明确是否包含纸片直径，保留原值且不扣6mm；对照部分ZOI小于纸片直径，定义需核查。
+M0132,A03-S01,A03,zone_of_inhibition_mm,20.27,=,,,1.3,SD,mm,,disk diffusion,Klebsiella pneumoniae,,negative,,,50,6,,,150000000.0,,,24,37,Mueller-Hinton agar,,,,,,,,,solvent negative; erythromycin15ug positive,3,free_CD,reported,1,,F06,p10 Table1; p17 methods,原文ZOI未明确是否包含纸片直径，保留原值且不扣6mm；对照部分ZOI小于纸片直径，定义需核查。
+M0133,A03-S01,A03,zone_of_inhibition_mm,19.54,=,,,0.38,SD,mm,,disk diffusion,Klebsiella pneumoniae,,negative,,,50,6,,,150000000.0,,,72,37,Mueller-Hinton agar,,,,,,,,,solvent negative; erythromycin15ug positive,3,free_CD,reported,1,,F06,p10 Table1; p17 methods,原文ZOI未明确是否包含纸片直径，保留原值且不扣6mm；对照部分ZOI小于纸片直径，定义需核查。
+M0134,A03-S01,A03,cell_viability_pct,93.1,=,,,6.5,SD,%,,MTT,L929 mouse fibroblast,,,50,,,,,,,,,24,37,,,,,,,,,,,,free_CD,reported,1,,F06,p10 §2.2.2; p18 methods,
+M0135,A04-S01,A04,diameter_TEM_nm,3.87,=,,,0.12,not_specified,nm,,TEM,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F07,p7 §3.3 Fig2e,
+M0136,A04-S01,A04,PLQY_pct,35.23,=,,,,,%,,quinine sulfate reference (54%),,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F07,p5 §3.1,
+M0137,A04-S01,A04,lattice_spacing_nm,0.21,=,,,,,nm,,HRTEM,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F07,p7 §3.3,
+M0138,A04-S01,A04,bacterial_colony_reduction_pct,,range,15,20,,,%,5 mg/mL; slight reduction15-20%,plate colony count,Staphylococcus aureus,,,,"results:5mg/mL; methods:5,10,20ug/mL",,,,,,,240,24,,LB,,,,,,,,,,,free_CD,conflict,0,,F07,p10 §3.5; p4 §2.9,范围未分别分配给物种，菌初浓度原文1x10^-6CFU/mL疑错。
+M0139,A04-S01,A04,bacterial_colony_reduction_pct,,range,15,20,,,%,5 mg/mL; slight reduction15-20%,plate colony count,Escherichia coli,,,,"results:5mg/mL; methods:5,10,20ug/mL",,,,,,,240,24,,LB,,,,,,,,,,,free_CD,conflict,0,,F07,p10 §3.5; p4 §2.9,范围未分别分配给物种，菌初浓度原文1x10^-6CFU/mL疑错。
+M0140,A04-F01,A04,bacterial_colony_reduction_pct,,range,70,80,,,%,Hg2+5-10uM; reduction70-80%,plate colony count,Staphylococcus aureus,,,,,,,,,,,240,24,,,,,,,,,,Hg2+5-10uM,,,CD_Hg_complex,conflict,0,,F07,p10 §3.5,不能分配Hg具体浓度与菌种；排除PET候选路线。
+M0141,A04-F01,A04,bacterial_colony_reduction_pct,,range,70,80,,,%,Hg2+5-10uM; reduction70-80%,plate colony count,Escherichia coli,,,,,,,,,,,240,24,,,,,,,,,,Hg2+5-10uM,,,CD_Hg_complex,conflict,0,,F07,p10 §3.5,不能分配Hg具体浓度与菌种；排除PET候选路线。
+M0142,A06-F01,A06,contact_growth_inhibition,0,=,,,,,binary,pure GMA excluded from contact inhibition,disk diffusion contact observation,Staphylococcus aureus,ATCC25923,,,,,5,,,100000000.0,,,24,37,Mueller-Hinton agar,,,,,,,,,,,hydrogel_precursor,qualitative,0,,F10,p9 §3.7 Fig6A-B; p4 §2.11,25uL前驱水凝胶/纸片；无抑菌圈不等于无接触抑菌活性。
+M0143,A06-F01,A06,zone_observation,,=,,,,,,,disk diffusion,Staphylococcus aureus,,,,,,,,,,,,24,,,,,,,,,,,,,hydrogel_precursor,qualitative,0,no zones of inhibition observed around filters,F10,p9 §3.7 Fig6A-B,未报告外圈数值，不填0mm。
+M0144,A06-F01,A06,contact_growth_inhibition,0,=,,,,,binary,pure GMA excluded from contact inhibition,disk diffusion contact observation,Escherichia coli,ATCC25922,,,,,5,,,100000000.0,,,24,37,Mueller-Hinton agar,,,,,,,,,,,hydrogel_precursor,qualitative,0,,F10,p9 §3.7 Fig6A-B; p4 §2.11,25uL前驱水凝胶/纸片；无抑菌圈不等于无接触抑菌活性。
+M0145,A06-F01,A06,zone_observation,,=,,,,,,,disk diffusion,Escherichia coli,,,,,,,,,,,,24,,,,,,,,,,,,,hydrogel_precursor,qualitative,0,no zones of inhibition observed around filters,F10,p9 §3.7 Fig6A-B,未报告外圈数值，不填0mm。
+M0146,A06-F02,A06,cell_viability_reduction_pct,1.8,approximately,,,,,%,,MTT extract assay,HDFn human dermal fibroblast,,,,,,,,,,,,24,,,,,,,,,,,,,PLA_GMA_bilayer,reported,1,,F10,p10 §3.8,保留原文下降率；不当作杀菌率。
+M0147,A06-F02,A06,cell_viability_reduction_pct,5.32,approximately,,,,,%,,MTT extract assay,HDFn human dermal fibroblast,,,,,,,,,,,,48,,,,,,,,,,,,,PLA_GMA_bilayer,reported,1,,F10,p10 §3.8,保留原文下降率；不当作杀菌率。
+M0148,A06-F03,A06,contact_growth_inhibition,1,=,,,,,binary,growth inhibited upon contact,disk diffusion contact observation,Staphylococcus aureus,ATCC25923,,,,,5,,,100000000.0,,,24,37,Mueller-Hinton agar,,,,,,,,,,,hydrogel_precursor,qualitative,0,,F10,p9 §3.7 Fig6A-B; p4 §2.11,25uL前驱水凝胶/纸片；无抑菌圈不等于无接触抑菌活性。
+M0149,A06-F03,A06,zone_observation,,=,,,,,,,disk diffusion,Staphylococcus aureus,,,,,,,,,,,,24,,,,,,,,,,,,,hydrogel_precursor,qualitative,0,no zones of inhibition observed around filters,F10,p9 §3.7 Fig6A-B,未报告外圈数值，不填0mm。
+M0150,A06-F03,A06,contact_growth_inhibition,1,=,,,,,binary,growth inhibited upon contact,disk diffusion contact observation,Escherichia coli,ATCC25922,,,,,5,,,100000000.0,,,24,37,Mueller-Hinton agar,,,,,,,,,,,hydrogel_precursor,qualitative,0,,F10,p9 §3.7 Fig6A-B; p4 §2.11,25uL前驱水凝胶/纸片；无抑菌圈不等于无接触抑菌活性。
+M0151,A06-F03,A06,zone_observation,,=,,,,,,,disk diffusion,Escherichia coli,,,,,,,,,,,,24,,,,,,,,,,,,,hydrogel_precursor,qualitative,0,no zones of inhibition observed around filters,F10,p9 §3.7 Fig6A-B,未报告外圈数值，不填0mm。
+M0152,A06-F04,A06,cell_viability_reduction_pct,2.53,approximately,,,,,%,,MTT extract assay,HDFn human dermal fibroblast,,,,,,,,,,,,24,,,,,,,,,,,,,PLA_GMA_bilayer,reported,1,,F10,p10 §3.8,保留原文下降率；不当作杀菌率。
+M0153,A06-F04,A06,cell_viability_reduction_pct,1.48,approximately,,,,,%,,MTT extract assay,HDFn human dermal fibroblast,,,,,,,,,,,,48,,,,,,,,,,,,,PLA_GMA_bilayer,reported,1,,F10,p10 §3.8,保留原文下降率；不当作杀菌率。
+M0154,A06-F05,A06,contact_growth_inhibition,1,=,,,,,binary,growth inhibited upon contact,disk diffusion contact observation,Staphylococcus aureus,ATCC25923,,,,,5,,,100000000.0,,,24,37,Mueller-Hinton agar,,,,,,,,,,,hydrogel_precursor,qualitative,0,,F10,p9 §3.7 Fig6A-B; p4 §2.11,25uL前驱水凝胶/纸片；无抑菌圈不等于无接触抑菌活性。
+M0155,A06-F05,A06,zone_observation,,=,,,,,,,disk diffusion,Staphylococcus aureus,,,,,,,,,,,,24,,,,,,,,,,,,,hydrogel_precursor,qualitative,0,no zones of inhibition observed around filters,F10,p9 §3.7 Fig6A-B,未报告外圈数值，不填0mm。
+M0156,A06-F05,A06,contact_growth_inhibition,1,=,,,,,binary,growth inhibited upon contact,disk diffusion contact observation,Escherichia coli,ATCC25922,,,,,5,,,100000000.0,,,24,37,Mueller-Hinton agar,,,,,,,,,,,hydrogel_precursor,qualitative,0,,F10,p9 §3.7 Fig6A-B; p4 §2.11,25uL前驱水凝胶/纸片；无抑菌圈不等于无接触抑菌活性。
+M0157,A06-F05,A06,zone_observation,,=,,,,,,,disk diffusion,Escherichia coli,,,,,,,,,,,,24,,,,,,,,,,,,,hydrogel_precursor,qualitative,0,no zones of inhibition observed around filters,F10,p9 §3.7 Fig6A-B,未报告外圈数值，不填0mm。
+M0158,A06-F06,A06,cell_viability_reduction_pct,9.02,approximately,,,,,%,,MTT extract assay,HDFn human dermal fibroblast,,,,,,,,,,,,24,,,,,,,,,,,,,PLA_GMA_bilayer,reported,1,,F10,p10 §3.8,保留原文下降率；不当作杀菌率。
+M0159,A06-F06,A06,cell_viability_reduction_pct,4.97,approximately,,,,,%,,MTT extract assay,HDFn human dermal fibroblast,,,,,,,,,,,,48,,,,,,,,,,,,,PLA_GMA_bilayer,reported,1,,F10,p10 §3.8,保留原文下降率；不当作杀菌率。
+M0160,A07-S01,A07,diameter_TEM_nm,2.4,=,,,0.5,not_specified,nm,,TEM,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F12,p4 §3.1 Fig2B,
+M0161,A07-S01,A07,suspension_CD_mg_g,14,=,,,0.8,not_specified,mg/g,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F12,p3 §2.2,悬浮液浓度，不是碳点合成产率。
+M0162,A07-S01,A07,emission_peak_nm,390,approximately,,,,,nm,,PL excitation300nm,,,,,,,,,,,,,,,,,,300,,,,,,,,free_CD,reported,1,,F12,p4 §3.1,
+M0163,A07-F01,A07,fiber_diameter_SEM_nm,619,=,,,17,not_specified,nm,,SEM,,,,,,,,,,,,,,,,,,,,,,,,,,PLA_fibrous_mat,reported,1,,F12,p6 §3.2,
+M0164,A07-F01,A07,solution_viscosity_cP,68,=,,,,,cP,,,,,,,,,,,,,,,,,,,,,,,,,,,,SBS_solution,reported,1,,F12,p6 §3.2,
+M0165,A07-F01,A07,contact_growth_inhibition,0,=,,,,,binary,no contact inhibition,disk diffusion contact observation,Staphylococcus aureus,ATCC25923,,,,,,,,100000000.0,,,24,37,Mueller-Hinton agar,,,,,,,,,,,PLA_fibrous_mat,qualitative,0,,F12,p7 §3.4.1; p4 §2.7,
+M0166,A07-F01,A07,zone_observation,,=,,,,,,,disk diffusion,Staphylococcus aureus,,,,,,,,,,,,,,,,,,,,,,,,,PLA_fibrous_mat,qualitative,0,no inhibition zones observed around specimens,F12,p7 §3.4.1,不赋值0mm。
+M0167,A07-F01,A07,contact_growth_inhibition,0,=,,,,,binary,no contact inhibition,disk diffusion contact observation,Pseudomonas aeruginosa,ATCC27853,,,,,,,,100000000.0,,,24,37,Mueller-Hinton agar,,,,,,,,,,,PLA_fibrous_mat,qualitative,0,,F12,p7 §3.4.1; p4 §2.7,
+M0168,A07-F01,A07,zone_observation,,=,,,,,,,disk diffusion,Pseudomonas aeruginosa,,,,,,,,,,,,,,,,,,,,,,,,,PLA_fibrous_mat,qualitative,0,no inhibition zones observed around specimens,F12,p7 §3.4.1,不赋值0mm。
+M0169,A07-F01,A07,microbial_penetration_growth,0,=,,,,,binary,no turbidity / no microbial growth,microbial penetration,,,,,,,,,,,,,240,,MHB15mL; air exposure,,,,,,,,,,,PLA_fibrous_mat,qualitative,0,,F12,p8 §3.4.2; p4 §2.7,所有PLA膜包括纯PLA均为屏障阴性，不能视为游离碳点杀菌证据。
+M0170,A07-F02,A07,fiber_diameter_SEM_nm,551,=,,,18,not_specified,nm,,SEM,,,,,,,,,,,,,,,,,,,,,,,,,,PLA_fibrous_mat,reported,1,,F12,p6 §3.2,
+M0171,A07-F02,A07,solution_viscosity_cP,65,=,,,,,cP,,,,,,,,,,,,,,,,,,,,,,,,,,,,SBS_solution,reported,1,,F12,p6 §3.2,
+M0172,A07-F02,A07,contact_growth_inhibition,1,=,,,,,binary,contact growth inhibited,disk diffusion contact observation,Staphylococcus aureus,ATCC25923,,,,,,,,100000000.0,,,24,37,Mueller-Hinton agar,,,,,,,,,,,PLA_fibrous_mat,qualitative,0,,F12,p7 §3.4.1; p4 §2.7,
+M0173,A07-F02,A07,zone_observation,,=,,,,,,,disk diffusion,Staphylococcus aureus,,,,,,,,,,,,,,,,,,,,,,,,,PLA_fibrous_mat,qualitative,0,no inhibition zones observed around specimens,F12,p7 §3.4.1,不赋值0mm。
+M0174,A07-F02,A07,contact_growth_inhibition,1,=,,,,,binary,contact growth inhibited,disk diffusion contact observation,Pseudomonas aeruginosa,ATCC27853,,,,,,,,100000000.0,,,24,37,Mueller-Hinton agar,,,,,,,,,,,PLA_fibrous_mat,qualitative,0,,F12,p7 §3.4.1; p4 §2.7,
+M0175,A07-F02,A07,zone_observation,,=,,,,,,,disk diffusion,Pseudomonas aeruginosa,,,,,,,,,,,,,,,,,,,,,,,,,PLA_fibrous_mat,qualitative,0,no inhibition zones observed around specimens,F12,p7 §3.4.1,不赋值0mm。
+M0176,A07-F02,A07,microbial_penetration_growth,0,=,,,,,binary,no turbidity / no microbial growth,microbial penetration,,,,,,,,,,,,,240,,MHB15mL; air exposure,,,,,,,,,,,PLA_fibrous_mat,qualitative,0,,F12,p8 §3.4.2; p4 §2.7,所有PLA膜包括纯PLA均为屏障阴性，不能视为游离碳点杀菌证据。
+M0177,A07-F03,A07,fiber_diameter_SEM_nm,468,=,,,17,not_specified,nm,,SEM,,,,,,,,,,,,,,,,,,,,,,,,,,PLA_fibrous_mat,reported,1,,F12,p6 §3.2,
+M0178,A07-F03,A07,solution_viscosity_cP,57,=,,,,,cP,,,,,,,,,,,,,,,,,,,,,,,,,,,,SBS_solution,reported,1,,F12,p6 §3.2,
+M0179,A07-F03,A07,contact_growth_inhibition,1,=,,,,,binary,contact growth inhibited,disk diffusion contact observation,Staphylococcus aureus,ATCC25923,,,,,,,,100000000.0,,,24,37,Mueller-Hinton agar,,,,,,,,,,,PLA_fibrous_mat,qualitative,0,,F12,p7 §3.4.1; p4 §2.7,
+M0180,A07-F03,A07,zone_observation,,=,,,,,,,disk diffusion,Staphylococcus aureus,,,,,,,,,,,,,,,,,,,,,,,,,PLA_fibrous_mat,qualitative,0,no inhibition zones observed around specimens,F12,p7 §3.4.1,不赋值0mm。
+M0181,A07-F03,A07,contact_growth_inhibition,1,=,,,,,binary,contact growth inhibited,disk diffusion contact observation,Pseudomonas aeruginosa,ATCC27853,,,,,,,,100000000.0,,,24,37,Mueller-Hinton agar,,,,,,,,,,,PLA_fibrous_mat,qualitative,0,,F12,p7 §3.4.1; p4 §2.7,
+M0182,A07-F03,A07,zone_observation,,=,,,,,,,disk diffusion,Pseudomonas aeruginosa,,,,,,,,,,,,,,,,,,,,,,,,,PLA_fibrous_mat,qualitative,0,no inhibition zones observed around specimens,F12,p7 §3.4.1,不赋值0mm。
+M0183,A07-F03,A07,microbial_penetration_growth,0,=,,,,,binary,no turbidity / no microbial growth,microbial penetration,,,,,,,,,,,,,240,,MHB15mL; air exposure,,,,,,,,,,,PLA_fibrous_mat,qualitative,0,,F12,p8 §3.4.2; p4 §2.7,所有PLA膜包括纯PLA均为屏障阴性，不能视为游离碳点杀菌证据。
+M0184,A07-F04,A07,fiber_diameter_SEM_nm,512,=,,,19,not_specified,nm,,SEM,,,,,,,,,,,,,,,,,,,,,,,,,,PLA_fibrous_mat,reported,1,,F12,p6 §3.2,
+M0185,A07-F04,A07,solution_viscosity_cP,52,=,,,,,cP,,,,,,,,,,,,,,,,,,,,,,,,,,,,SBS_solution,reported,1,,F12,p6 §3.2,
+M0186,A07-F04,A07,contact_growth_inhibition,1,=,,,,,binary,contact growth inhibited,disk diffusion contact observation,Staphylococcus aureus,ATCC25923,,,,,,,,100000000.0,,,24,37,Mueller-Hinton agar,,,,,,,,,,,PLA_fibrous_mat,qualitative,0,,F12,p7 §3.4.1; p4 §2.7,
+M0187,A07-F04,A07,zone_observation,,=,,,,,,,disk diffusion,Staphylococcus aureus,,,,,,,,,,,,,,,,,,,,,,,,,PLA_fibrous_mat,qualitative,0,no inhibition zones observed around specimens,F12,p7 §3.4.1,不赋值0mm。
+M0188,A07-F04,A07,contact_growth_inhibition,1,=,,,,,binary,contact growth inhibited,disk diffusion contact observation,Pseudomonas aeruginosa,ATCC27853,,,,,,,,100000000.0,,,24,37,Mueller-Hinton agar,,,,,,,,,,,PLA_fibrous_mat,qualitative,0,,F12,p7 §3.4.1; p4 §2.7,
+M0189,A07-F04,A07,zone_observation,,=,,,,,,,disk diffusion,Pseudomonas aeruginosa,,,,,,,,,,,,,,,,,,,,,,,,,PLA_fibrous_mat,qualitative,0,no inhibition zones observed around specimens,F12,p7 §3.4.1,不赋值0mm。
+M0190,A07-F04,A07,microbial_penetration_growth,0,=,,,,,binary,no turbidity / no microbial growth,microbial penetration,,,,,,,,,,,,,240,,MHB15mL; air exposure,,,,,,,,,,,PLA_fibrous_mat,qualitative,0,,F12,p8 §3.4.2; p4 §2.7,所有PLA膜包括纯PLA均为屏障阴性，不能视为游离碳点杀菌证据。
+M0191,A07-F02,A07,CD_encapsulation_pct,77.6,=,,,5,not_specified,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,PLA_fibrous_mat,reported,1,,F12,p7 Table1,
+M0192,A07-F03,A07,curcumin_encapsulation_pct,74.2,=,,,3,not_specified,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,PLA_fibrous_mat,reported,1,,F12,p7 Table1,
+M0193,A07-F04,A07,CD_encapsulation_pct,58.8,=,,,1,not_specified,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,PLA_fibrous_mat,reported,1,,F12,p7 Table1,
+M0194,A07-F04,A07,curcumin_encapsulation_pct,72,=,,,1,not_specified,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,PLA_fibrous_mat,reported,1,,F12,p7 Table1,
+M0195,A08-S01,A08,diameter_TEM_nm,2.4,=,,,,,nm,,TEM,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F14,p4 §3.1,
+M0196,A08-S01,A08,lattice_spacing_nm,0.21,=,,,,,nm,,HRTEM,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F14,p4 §3.1,
+M0197,A08-F02,A08,bacterial_survival_pct,47.45,=,,,,,%,,plate colony count,Escherichia coli,,negative,,,,,0.1,10,1000000.0,,15,24,,0.85wt% saline; PCA plating,,dark,,,,,,,untreated sample,3,PVA_film,reported,1,,F14,p8 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。
+M0198,A08-F02,A08,bacterial_survival_pct,29.09,=,,,,,%,,plate colony count,Escherichia coli,,negative,,,,,0.1,10,1000000.0,,45,24,,0.85wt% saline; PCA plating,,dark,,,,,,,untreated sample,3,PVA_film,reported,1,,F14,p8 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。
+M0199,A08-F02,A08,bacterial_survival_pct,27.27,=,,,,,%,,plate colony count,Escherichia coli,,negative,,,,,0.1,10,1000000.0,,15,24,,0.85wt% saline; PCA plating,,visible,420,>,,300,,,untreated sample,3,PVA_film,reported,1,,F14,p8 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。
+M0200,A08-F02,A08,bacterial_killing_pct,23.22,=,,,,,%,,plate colony count,Staphylococcus aureus,,positive,,,,,0.1,10,1000000.0,,45,24,,0.85wt% saline; PCA plating,,dark,,,,,,,untreated sample,3,PVA_film,reported,1,,F14,p9 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。
+M0201,A08-F02,A08,bacterial_killing_pct,34.31,=,,,,,%,,plate colony count,Staphylococcus aureus,,positive,,,,,0.1,10,1000000.0,,45,24,,0.85wt% saline; PCA plating,,visible,420,>,,300,,,untreated sample,3,PVA_film,reported,1,,F14,p9 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。
+M0202,A08-F03,A08,bacterial_survival_pct,46,=,,,,,%,,plate colony count,Escherichia coli,,negative,,,,,0.1,10,1000000.0,,15,24,,0.85wt% saline; PCA plating,,dark,,,,,,,untreated sample,3,PVA_film,reported,1,,F14,p8 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。
+M0203,A08-F03,A08,bacterial_survival_pct,4.18,=,,,,,%,,plate colony count,Escherichia coli,,negative,,,,,0.1,10,1000000.0,,45,24,,0.85wt% saline; PCA plating,,dark,,,,,,,untreated sample,3,PVA_film,reported,1,,F14,p8 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。
+M0204,A08-F03,A08,bacterial_survival_pct,12.9,=,,,,,%,,plate colony count,Escherichia coli,,negative,,,,,0.1,10,1000000.0,,15,24,,0.85wt% saline; PCA plating,,visible,420,>,,300,,,untreated sample,3,PVA_film,reported,1,,F14,p8 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。
+M0205,A08-F03,A08,bacterial_killing_pct,25.5,=,,,,,%,,plate colony count,Staphylococcus aureus,,positive,,,,,0.1,10,1000000.0,,45,24,,0.85wt% saline; PCA plating,,dark,,,,,,,untreated sample,3,PVA_film,reported,1,,F14,p9 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。
+M0206,A08-F03,A08,bacterial_killing_pct,48.53,=,,,,,%,,plate colony count,Staphylococcus aureus,,positive,,,,,0.1,10,1000000.0,,45,24,,0.85wt% saline; PCA plating,,visible,420,>,,300,,,untreated sample,3,PVA_film,reported,1,,F14,p9 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。
+M0207,A08-F04,A08,bacterial_survival_pct,29.45,=,,,,,%,,plate colony count,Escherichia coli,,negative,,,,,0.1,10,1000000.0,,15,24,,0.85wt% saline; PCA plating,,dark,,,,,,,untreated sample,3,PVA_film,reported,1,,F14,p8 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。
+M0208,A08-F04,A08,bacterial_survival_pct,0,reported_zero,,,,,%,,plate colony count,Escherichia coli,,negative,,,,,0.1,10,1000000.0,,45,24,,0.85wt% saline; PCA plating,,dark,,,,,,,untreated sample,3,PVA_film,reported,0,,F14,p8 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。
+M0209,A08-F04,A08,bacterial_survival_pct,6,=,,,,,%,,plate colony count,Escherichia coli,,negative,,,,,0.1,10,1000000.0,,15,24,,0.85wt% saline; PCA plating,,visible,420,>,,300,,,untreated sample,3,PVA_film,reported,1,,F14,p8 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。
+M0210,A08-F04,A08,bacterial_killing_pct,31.47,=,,,,,%,,plate colony count,Staphylococcus aureus,,positive,,,,,0.1,10,1000000.0,,45,24,,0.85wt% saline; PCA plating,,dark,,,,,,,untreated sample,3,PVA_film,reported,1,,F14,p9 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。
+M0211,A08-F04,A08,bacterial_killing_pct,88.44,=,,,,,%,,plate colony count,Staphylococcus aureus,,positive,,,,,0.1,10,1000000.0,,45,24,,0.85wt% saline; PCA plating,,visible,420,>,,300,,,untreated sample,3,PVA_film,reported,1,,F14,p9 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。
+M0212,A08-F03,A08,bacterial_killing_pct,100,=,,,,,%,,plate colony count,Escherichia coli,,negative,,,,,0.1,10,1000000.0,,45,24,,0.85wt% saline; PCA plating,,visible,420,>,,300,,,untreated sample,3,PVA_film,reported,1,,F14,p8 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。
+M0213,A08-F04,A08,bacterial_killing_pct,100,=,,,,,%,,plate colony count,Escherichia coli,,negative,,,,,0.1,10,1000000.0,,45,24,,0.85wt% saline; PCA plating,,visible,420,>,,300,,,untreated sample,3,PVA_film,reported,1,,F14,p8 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。
+M0214,A05-S01,A05,diameter_TEM_nm,10.7,=,,,1.9,not_specified,nm,,,,,,,,,,,,,,,,,,,,,,,,,,,62,free_CD,reported,1,,F15,p6 CD characterization; Fig2,
+M0215,A05-S01,A05,PLQY_pct,47.8,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F15,p6 CD characterization; Fig2,
+M0216,A05-S01,A05,emission_peak_nm,470,approximately,,,,,nm,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F15,p6 CD characterization; Fig2,
+M0217,A05-S01,A05,excitation_peak_nm,380,=,,,,,nm,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F15,p6 CD characterization; Fig2,
+M0218,A05-S01,A05,XPS_C_pct,61.9,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F15,p6 CD characterization; Fig2,
+M0219,A05-S01,A05,XPS_O_pct,34.4,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F15,p6 CD characterization; Fig2,
+M0220,A05-S01,A05,XPS_S_pct,2.1,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F15,p6 CD characterization; Fig2,
+M0221,A05-S01,A05,XPS_Ca_pct,1.7,=,,,,,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,free_CD,reported,1,,F15,p6 CD characterization; Fig2,
+M0222,A05-F03,A05,bacterial_inactivation_pct,20.6,=,,,1.04,not_specified,%,,attached bacterial plate count,Escherichia coli,ATCC8739,negative,,,,,,5,100000000.0,,180,,,0.85%NaCl saline,,dark,,,,,,,pristineTFC in darkness,4,TFC_PDA_membrane,reported,1,,F15,p8 Fig5/results; p1 abstract forCD500; p4-5 methods,daylight为3500K LED；灯额定W不能换算样品处mW/cm2。测试为附着细菌相对TFC暗对照。
+M0223,A05-F06,A05,bacterial_inactivation_pct,74.2,=,,,0.62,not_specified,%,,attached bacterial plate count,Escherichia coli,ATCC8739,negative,,,,,,5,100000000.0,,180,,,0.85%NaCl saline,,dark,,,,,,,pristineTFC in darkness,4,TFC_PDA_membrane,reported,1,,F15,p8 Fig5/results; p1 abstract forCD500; p4-5 methods,daylight为3500K LED；灯额定W不能换算样品处mW/cm2。测试为附着细菌相对TFC暗对照。
+M0224,A05-F03,A05,bacterial_inactivation_pct,27.9,=,,,3,not_specified,%,,attached bacterial plate count,Bacillus subtilis,ATCC6633,positive,,,,,,5,100000000.0,,180,,,0.85%NaCl saline,,dark,,,,,,,pristineTFC in darkness,4,TFC_PDA_membrane,reported,1,,F15,p8 Fig5/results; p1 abstract forCD500; p4-5 methods,daylight为3500K LED；灯额定W不能换算样品处mW/cm2。测试为附着细菌相对TFC暗对照。
+M0225,A05-F06,A05,bacterial_inactivation_pct,73.4,=,,,1.8,not_specified,%,,attached bacterial plate count,Bacillus subtilis,ATCC6633,positive,,,,,,5,100000000.0,,180,,,0.85%NaCl saline,,dark,,,,,,,pristineTFC in darkness,4,TFC_PDA_membrane,reported,1,,F15,p8 Fig5/results; p1 abstract forCD500; p4-5 methods,daylight为3500K LED；灯额定W不能换算样品处mW/cm2。测试为附着细菌相对TFC暗对照。
+M0226,A05-F01,A05,bacterial_inactivation_pct,62.2,=,,,2.5,not_specified,%,,attached bacterial plate count,Escherichia coli,ATCC8739,negative,,,,,,5,100000000.0,,180,,,0.85%NaCl saline,,daylight,,,,3.5,,,pristineTFC in darkness,4,TFC_PDA_membrane,reported,1,,F15,p8 Fig5/results; p1 abstract forCD500; p4-5 methods,daylight为3500K LED；灯额定W不能换算样品处mW/cm2。测试为附着细菌相对TFC暗对照。
+M0227,A05-F01,A05,bacterial_inactivation_pct,73,=,,,2.6,not_specified,%,,attached bacterial plate count,Bacillus subtilis,ATCC6633,positive,,,,,,5,100000000.0,,180,,,0.85%NaCl saline,,daylight,,,,3.5,,,pristineTFC in darkness,4,TFC_PDA_membrane,reported,1,,F15,p8 Fig5/results; p1 abstract forCD500; p4-5 methods,daylight为3500K LED；灯额定W不能换算样品处mW/cm2。测试为附着细菌相对TFC暗对照。
+M0228,A05-F03,A05,bacterial_inactivation_pct,67.9,=,,,4.9,not_specified,%,,attached bacterial plate count,Escherichia coli,ATCC8739,negative,,,,,,5,100000000.0,,180,,,0.85%NaCl saline,,daylight,,,,3.5,,,pristineTFC in darkness,4,TFC_PDA_membrane,reported,1,,F15,p8 Fig5/results; p1 abstract forCD500; p4-5 methods,daylight为3500K LED；灯额定W不能换算样品处mW/cm2。测试为附着细菌相对TFC暗对照。
+M0229,A05-F06,A05,bacterial_inactivation_pct,81.1,=,,,0.9,not_specified,%,,attached bacterial plate count,Escherichia coli,ATCC8739,negative,,,,,,5,100000000.0,,180,,,0.85%NaCl saline,,daylight,,,,3.5,,,pristineTFC in darkness,4,TFC_PDA_membrane,reported,1,,F15,p8 Fig5/results; p1 abstract forCD500; p4-5 methods,daylight为3500K LED；灯额定W不能换算样品处mW/cm2。测试为附着细菌相对TFC暗对照。
+M0230,A05-F03,A05,bacterial_inactivation_pct,75.6,=,,,0.5,not_specified,%,,attached bacterial plate count,Bacillus subtilis,ATCC6633,positive,,,,,,5,100000000.0,,180,,,0.85%NaCl saline,,daylight,,,,3.5,,,pristineTFC in darkness,4,TFC_PDA_membrane,reported,1,,F15,p8 Fig5/results; p1 abstract forCD500; p4-5 methods,daylight为3500K LED；灯额定W不能换算样品处mW/cm2。测试为附着细菌相对TFC暗对照。
+M0231,A05-F06,A05,bacterial_inactivation_pct,87.3,=,,,2.6,not_specified,%,,attached bacterial plate count,Bacillus subtilis,ATCC6633,positive,,,,,,5,100000000.0,,180,,,0.85%NaCl saline,,daylight,,,,3.5,,,pristineTFC in darkness,4,TFC_PDA_membrane,reported,1,,F15,p8 Fig5/results; p1 abstract forCD500; p4-5 methods,daylight为3500K LED；灯额定W不能换算样品处mW/cm2。测试为附着细菌相对TFC暗对照。
+M0232,A05-F01,A05,bacterial_inactivation_pct,97.9,=,,,0.15,not_specified,%,,attached bacterial plate count,Escherichia coli,ATCC8739,negative,,,,,,5,100000000.0,,180,,,0.85%NaCl saline,,UV,365,,,3,,,pristineTFC in darkness,4,TFC_PDA_membrane,reported,1,,F15,p8 Fig5/results; p1 abstract forCD500; p4-5 methods,daylight为3500K LED；灯额定W不能换算样品处mW/cm2。测试为附着细菌相对TFC暗对照。
+M0233,A05-F01,A05,bacterial_inactivation_pct,99.87,=,,,0.017,not_specified,%,,attached bacterial plate count,Bacillus subtilis,ATCC6633,positive,,,,,,5,100000000.0,,180,,,0.85%NaCl saline,,UV,365,,,3,,,pristineTFC in darkness,4,TFC_PDA_membrane,reported,1,,F15,p8 Fig5/results; p1 abstract forCD500; p4-5 methods,daylight为3500K LED；灯额定W不能换算样品处mW/cm2。测试为附着细菌相对TFC暗对照。
+M0234,A05-F06,A05,bacterial_inactivation_pct,99.97,=,,,0.045,not_specified,%,,attached bacterial plate count,Escherichia coli,ATCC8739,negative,,,,,,5,100000000.0,,180,,,0.85%NaCl saline,,UV,365,,,3,,,pristineTFC in darkness,4,TFC_PDA_membrane,reported,1,,F15,p8 Fig5/results; p1 abstract forCD500; p4-5 methods,daylight为3500K LED；灯额定W不能换算样品处mW/cm2。测试为附着细菌相对TFC暗对照。
+M0235,A05-F05,A05,bacterial_inactivation_pct,69.9,=,,,1.7,not_specified,%,,attached bacterial plate count,Escherichia coli,ATCC8739,negative,,,,,,5,100000000.0,,180,,,0.85%NaCl saline,,dark,,,,,,,pristineTFC in darkness,4,TFC_PDA_membrane,reported,1,,F15,p8 Fig5/results; p1 abstract forCD500; p4-5 methods,daylight为3500K LED；灯额定W不能换算样品处mW/cm2。测试为附着细菌相对TFC暗对照。
+M0236,A05-F05,A05,bacterial_inactivation_pct,76.4,=,,,1.8,not_specified,%,,attached bacterial plate count,Escherichia coli,ATCC8739,negative,,,,,,5,100000000.0,,180,,,0.85%NaCl saline,,daylight,,,,3.5,,,pristineTFC in darkness,4,TFC_PDA_membrane,reported,1,,F15,p8 Fig5/results; p1 abstract forCD500; p4-5 methods,daylight为3500K LED；灯额定W不能换算样品处mW/cm2。测试为附着细菌相对TFC暗对照。
+M0237,A05-F05,A05,bacterial_inactivation_pct,99.92,=,,,0.03,not_specified,%,,attached bacterial plate count,Escherichia coli,ATCC8739,negative,,,,,,5,100000000.0,,180,,,0.85%NaCl saline,,UV,365,,,3,,,pristineTFC in darkness,4,TFC_PDA_membrane,reported,1,,F15,p8 Fig5/results; p1 abstract forCD500; p4-5 methods,daylight为3500K LED；灯额定W不能换算样品处mW/cm2。测试为附着细菌相对TFC暗对照。
+M0238,A05-F05,A05,bacterial_inactivation_pct,71.4,=,,,0.6,not_specified,%,,attached bacterial plate count,Escherichia coli,ATCC8739,,,,,,,,,,180,,,synthetic wastewater,,UV,365,,,3,,,TFC in darkness,4,TFC_PDA_membrane,reported,1,,F15,p11 Fig8; p1 abstract,
+M0239,A02-S02,A02,bacterial_killing_pct,97.4,=,,,0.1,not_specified,%,100 - 2.6,UV-vis bacterial survival,Escherichia coli,MDR (strain attribution unresolved),negative,40,LCDs-OA,,,,,,0.1,240,,37,0.1M acetate buffer; subsequent LB,4.5,,,,,,,H2O2 present; antibacterial concentration not stated,acetate buffer,,free_CD_with_H2O2,derived,1,,F04,p9 §3.5; F08 P34,不可把酶活测试0.5mM H2O2浓度转移到抗菌试验；MDR与SI购买菌株编号不一致。 派生自M0077；不能同时作为独立训练样本。
+M0240,A02-S02,A02,bacterial_killing_pct,98.7,=,,,0.2,not_specified,%,100 - 1.3,UV-vis bacterial survival,Staphylococcus aureus,MDR (strain attribution unresolved),positive,40,LCDs-OA,,,,,,0.1,240,,37,0.1M acetate buffer; subsequent LB,4.5,,,,,,,H2O2 present; antibacterial concentration not stated,acetate buffer,,free_CD_with_H2O2,derived,1,,F04,p9 §3.5; F08 P34,不可把酶活测试0.5mM H2O2浓度转移到抗菌试验；MDR与SI购买菌株编号不一致。 派生自M0079；不能同时作为独立训练样本。
+M0241,A02-F01,A02,bacterial_killing_pct,97.9,=,,,0.2,not_specified,%,100 - 2.1,UV-vis bacterial survival,Escherichia coli,MDR (strain attribution unresolved),negative,75,LCDs-OA@CaO2 composite total,,,,,,0.1,240,,37,0.1M acetate buffer,4.5,,,,,,0,CaO2 supplies peroxide,,,CD_CaO2_composite,derived,1,,F04,p9 §3.5; F08 P34, 派生自M0081；不能同时作为独立训练样本。
+M0242,A02-F01,A02,bacterial_killing_pct,98.2,=,,,0.4,not_specified,%,100 - 1.8,UV-vis bacterial survival,Staphylococcus aureus,MDR (strain attribution unresolved),positive,75,LCDs-OA@CaO2 composite total,,,,,,0.1,240,,37,0.1M acetate buffer,4.5,,,,,,0,CaO2 supplies peroxide,,,CD_CaO2_composite,derived,1,,F04,p9 §3.5; F08 P34, 派生自M0082；不能同时作为独立训练样本。
+M0243,A08-F02,A08,bacterial_killing_pct,52.55,=,,,,,%,100 - 47.45,plate colony count,Escherichia coli,,negative,,,,,0.1,10,1000000.0,,15,24,,0.85wt% saline; PCA plating,,dark,,,,,,,untreated sample,3,PVA_film,derived,1,,F14,p8 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。 派生自M0197；不能同时作为独立训练样本。
+M0244,A08-F02,A08,bacterial_killing_pct,70.91,=,,,,,%,100 - 29.09,plate colony count,Escherichia coli,,negative,,,,,0.1,10,1000000.0,,45,24,,0.85wt% saline; PCA plating,,dark,,,,,,,untreated sample,3,PVA_film,derived,1,,F14,p8 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。 派生自M0198；不能同时作为独立训练样本。
+M0245,A08-F02,A08,bacterial_killing_pct,72.73,=,,,,,%,100 - 27.27,plate colony count,Escherichia coli,,negative,,,,,0.1,10,1000000.0,,15,24,,0.85wt% saline; PCA plating,,visible,420,>,,300,,,untreated sample,3,PVA_film,derived,1,,F14,p8 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。 派生自M0199；不能同时作为独立训练样本。
+M0246,A08-F03,A08,bacterial_killing_pct,54,=,,,,,%,100 - 46,plate colony count,Escherichia coli,,negative,,,,,0.1,10,1000000.0,,15,24,,0.85wt% saline; PCA plating,,dark,,,,,,,untreated sample,3,PVA_film,derived,1,,F14,p8 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。 派生自M0202；不能同时作为独立训练样本。
+M0247,A08-F03,A08,bacterial_killing_pct,95.82,=,,,,,%,100 - 4.18,plate colony count,Escherichia coli,,negative,,,,,0.1,10,1000000.0,,45,24,,0.85wt% saline; PCA plating,,dark,,,,,,,untreated sample,3,PVA_film,derived,1,,F14,p8 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。 派生自M0203；不能同时作为独立训练样本。
+M0248,A08-F03,A08,bacterial_killing_pct,87.1,=,,,,,%,100 - 12.9,plate colony count,Escherichia coli,,negative,,,,,0.1,10,1000000.0,,15,24,,0.85wt% saline; PCA plating,,visible,420,>,,300,,,untreated sample,3,PVA_film,derived,1,,F14,p8 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。 派生自M0204；不能同时作为独立训练样本。
+M0249,A08-F04,A08,bacterial_killing_pct,70.55,=,,,,,%,100 - 29.45,plate colony count,Escherichia coli,,negative,,,,,0.1,10,1000000.0,,15,24,,0.85wt% saline; PCA plating,,dark,,,,,,,untreated sample,3,PVA_film,derived,1,,F14,p8 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。 派生自M0207；不能同时作为独立训练样本。
+M0250,A08-F04,A08,bacterial_killing_pct,94,=,,,,,%,100 - 6,plate colony count,Escherichia coli,,negative,,,,,0.1,10,1000000.0,,15,24,,0.85wt% saline; PCA plating,,visible,420,>,,300,,,untreated sample,3,PVA_film,derived,1,,F14,p8 §3.5,方法称每10min取样，结果正文以15/45min报告；保留结果明确时间。 派生自M0209；不能同时作为独立训练样本。

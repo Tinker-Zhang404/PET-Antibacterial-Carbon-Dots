@@ -1,0 +1,24 @@
+﻿formulation_id,study_id,formulation_label,parent_sample_id,matrix,cd_loading_pct,cd_loading_basis,cd_mass_mg,cd_bath_ug_mL,coactive,coactive_loading_pct,matrix_mass_g,processing,source_file_id,source_locator,notes
+A02-F01,A02,LCDs-OA@CaO2,A02-S02,CaO2,,,,,,,,LCDs-OA:CaO2=1:1; ethanol stirring24h; centrifuge/ethanol wash,F04,p2-3 §2.3,CaO2合成段存在明显文字/化学计量异常，未自动纠正。
+A01-F01,A01,"PVA/HA/N,L-CQDs3 optimal patch",A01-S04,PVA + sodium hyaluronate,,,30,,,,5,PVA5g/25mL water90C1h; HA0.5g/25mL water30min; mix; five freeze-thaw cycles(-20C8h/cycle),F05,p4 §2.5; p8 §3.4,30mg为每批加入量，不能当作局部创面给药剂量；HA分子量<=40000。
+A04-F01,A04,Lig-NCDs/Hg2+,A04-S01,none,,,,,Hg2+,,,pre-coordinate Lig-NCDs with Hg2+,F07,p10 §3.5,重金属本身毒性贡献；不作为PET安全搭配材料的候选证据。
+A06-F01,A06,GMA,,methacrylated gelatin+gelatin,0,reported wt%; denominator not explicitly specified,,,,,,50mg Irgacure2959/5mL PBS;0.5g GMA; mix with0.3g gelatin solution1:1v/v,F10,p3 §2.3,抗菌测试用水凝胶前驱液；不是最终PLA复合膜。
+A06-F02,A06,PLA/GMA,,PLA + GMA hydrogel,0,hydrogel formulation reported wt%,,,,,,PLA12%w/v CHCl3/DMF4:1; SBS7.5mL/h2bar22cm;3D-print30x22x0.5mm; UV365nm30min,F10,p3 §2.3,printing speed原文3.3m/s，未擅自改单位；前驱水凝胶关联A06-F01
+A06-F03,A06,GMA/CD5,A06-S01,methacrylated gelatin+gelatin,5,reported wt%; denominator not explicitly specified,,,,,,50mg Irgacure2959/5mL PBS;0.5g GMA; mix with0.3g gelatin solution1:1v/v,F10,p3 §2.3,抗菌测试用水凝胶前驱液；不是最终PLA复合膜。
+A06-F04,A06,PLA/GMA/CD5,A06-S01,PLA + GMA hydrogel,5,hydrogel formulation reported wt%,,,,,,PLA12%w/v CHCl3/DMF4:1; SBS7.5mL/h2bar22cm;3D-print30x22x0.5mm; UV365nm30min,F10,p3 §2.3,printing speed原文3.3m/s，未擅自改单位；前驱水凝胶关联A06-F03
+A06-F05,A06,GMA/CD10,A06-S01,methacrylated gelatin+gelatin,10,reported wt%; denominator not explicitly specified,,,,,,50mg Irgacure2959/5mL PBS;0.5g GMA; mix with0.3g gelatin solution1:1v/v,F10,p3 §2.3,抗菌测试用水凝胶前驱液；不是最终PLA复合膜。
+A06-F06,A06,PLA/GMA/CD10,A06-S01,PLA + GMA hydrogel,10,hydrogel formulation reported wt%,,,,,,PLA12%w/v CHCl3/DMF4:1; SBS7.5mL/h2bar22cm;3D-print30x22x0.5mm; UV365nm30min,F10,p3 §2.3,printing speed原文3.3m/s，未擅自改单位；前驱水凝胶关联A06-F05
+A07-F01,A07,PLA,,PLA,0,PLA mass,,,,0,,PLA12%w/v CHCl3/DMF4:1;stir15h;SBS2bar22cm,F12,p3 §2.3,SBS优化参数TableS1未在本地提供。
+A07-F02,A07,PLA/LCdots,A07-S01,PLA,2,PLA mass,,,,0,,PLA12%w/v CHCl3/DMF4:1;stir15h;SBS2bar22cm,F12,p3 §2.3,SBS优化参数TableS1未在本地提供。
+A07-F03,A07,PLA/Cur,,PLA,0,PLA mass,,,curcumin,10,,PLA12%w/v CHCl3/DMF4:1;stir15h;SBS2bar22cm,F12,p3 §2.3,SBS优化参数TableS1未在本地提供。
+A07-F04,A07,PLA/LCdots/Cur,A07-S01,PLA,2,PLA mass,,,curcumin,10,,PLA12%w/v CHCl3/DMF4:1;stir15h;SBS2bar22cm,F12,p3 §2.3,SBS优化参数TableS1未在本地提供。
+A08-F01,A08,PVA,,PVA1750,0,reported mass%; denominator not explicitly defined,,,,,5,PVA5g/100mLwater90C4h;addCD80C30min;cast20x20cm;dry25C48h;condition25C50%RH48h,F14,p2 §2.3,
+A08-F02,A08,PVA-5%LCQDs,A08-S01,PVA1750,5,reported mass%; denominator not explicitly defined,,,,,5,PVA5g/100mLwater90C4h;addCD80C30min;cast20x20cm;dry25C48h;condition25C50%RH48h,F14,p2 §2.3,
+A08-F03,A08,PVA-10%LCQDs,A08-S01,PVA1750,10,reported mass%; denominator not explicitly defined,,,,,5,PVA5g/100mLwater90C4h;addCD80C30min;cast20x20cm;dry25C48h;condition25C50%RH48h,F14,p2 §2.3,
+A08-F04,A08,PVA-20%LCQDs,A08-S01,PVA1750,20,reported mass%; denominator not explicitly defined,,,,,5,PVA5g/100mLwater90C4h;addCD80C30min;cast20x20cm;dry25C48h;condition25C50%RH48h,F14,p2 §2.3,
+A05-F01,A05,TFC,,TFC polyamide membrane,,,,,,,,commercial FilmTec SW30XLE,F15,p3 Membrane Functionalization,浓度为表面修饰浴浓度，不是实测膜负载量或测试液游离CD剂量。
+A05-F02,A05,TFC-PDA,,TFC polyamide membrane + PDA,,,,,,,,dopamine50mg/25mL10mMTris pH8.5 15min; CD bath24h atRT30rpm;rinse;store4C,F15,p3 Membrane Functionalization,浓度为表面修饰浴浓度，不是实测膜负载量或测试液游离CD剂量。
+A05-F03,A05,CD-100,A05-S01,TFC polyamide membrane + PDA,,,,100,,,,dopamine50mg/25mL10mMTris pH8.5 15min; CD bath24h atRT30rpm;rinse;store4C,F15,p3 Membrane Functionalization,浓度为表面修饰浴浓度，不是实测膜负载量或测试液游离CD剂量。
+A05-F04,A05,CD-300,A05-S01,TFC polyamide membrane + PDA,,,,300,,,,dopamine50mg/25mL10mMTris pH8.5 15min; CD bath24h atRT30rpm;rinse;store4C,F15,p3 Membrane Functionalization,浓度为表面修饰浴浓度，不是实测膜负载量或测试液游离CD剂量。
+A05-F05,A05,CD-500,A05-S01,TFC polyamide membrane + PDA,,,,500,,,,dopamine50mg/25mL10mMTris pH8.5 15min; CD bath24h atRT30rpm;rinse;store4C,F15,p3 Membrane Functionalization,浓度为表面修饰浴浓度，不是实测膜负载量或测试液游离CD剂量。
+A05-F06,A05,CD-1000,A05-S01,TFC polyamide membrane + PDA,,,,1000,,,,dopamine50mg/25mL10mMTris pH8.5 15min; CD bath24h atRT30rpm;rinse;store4C,F15,p3 Membrane Functionalization,浓度为表面修饰浴浓度，不是实测膜负载量或测试液游离CD剂量。
